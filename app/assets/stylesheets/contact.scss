@@ -1,0 +1,12 @@
+@import "bootstrap-overrides";
+
+.contact-block {
+	.contact-content {
+	  background-color: $dark-grey;
+	  .twitter-img,
+	  .linkedin-img,
+	  .github-img {
+	    max-width: 130px;
+	  }
+	}
+}

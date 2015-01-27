@@ -1,0 +1,76 @@
+@import "bootstrap-overrides";
+
+@mixin ease {
+  -webkit-transition: 400ms ease;
+  -moz-transition: 400ms ease;
+  -o-transition: 400ms ease;
+  transition: 400ms ease;
+  -webkit-transition-property: -webkit-transform, left, right; /* Add left/right for Android < 4.4. */
+  -webkit-backface-visibility: hidden; /* Prevents flickering. This is non essential, and you may remove it if your having problems with fixed background images in Chrome. */
+}
+
+.navbird {
+  @include ease;
+  right: -270px;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  z-index: 15;
+  width: 270px;
+  &.open {
+    @include ease;
+    right: 0;
+  }
+  .navbar-toggle {
+    position: relative;
+    @include ease;
+    top: 0;
+    right: 269px;
+    border: none;
+    background-color: $light-blue;
+    margin-top: 40px;
+    padding: 40px 15px 40px 15px;
+    margin-right: 0;
+    border-radius: 0;
+    &.open {
+      @include ease;
+     right: 269px;
+    }
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: $light-blue;
+    }
+    .menu {
+      -webkit-transform: rotate(-90deg);
+      -moz-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      -o-transform: rotate(-90deg);
+      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    }
+  }
+  .navbar-content {
+    margin-top: 0;
+    padding: 50px 40px;
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $light-blue;
+    text-align: left;
+    height: 100%;
+    li {
+      padding: 10px 0;
+      a {
+        color: white;
+        &:hover {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}
+
+
+
+

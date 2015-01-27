@@ -1,0 +1,59 @@
+@import "bootstrap-overrides";
+
+.work-block {
+	color: $text-color;
+  position: relative;
+  .container {
+    padding-bottom: 30px;
+    padding-top: 10px;
+  }
+	.section-title {
+    background-color: $light-blue-transparent;
+    color: white;
+    border-bottom: 1px solid $light-blue;
+	}
+	.description {
+		color: $dark-grey;
+	}
+  .work-item {
+    background-color: $off-white;
+    .project-column {
+      text-align: center;
+    }
+    .description {
+      color: $dark-grey;
+    }
+
+  }
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+      color: black;      
+      transition: color 1s ease;
+    }
+    .crossfit {
+      @extend a;
+      color: $crossfit-gold;
+    }
+    .secondsource {
+      @extend a;
+      color: $secondsource-green;
+    }
+    .akta {
+      @extend a;
+      color: $akta-red;
+    }
+    .pinguino {
+      @extend a;
+      color: $pinguino-purple;
+    }
+
+  }
+}
+
+@media (min-width:700px) and (max-width:992px) {
+  .project-column {
+    padding: 0 65px;
+  }
+}

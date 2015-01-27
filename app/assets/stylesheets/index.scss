@@ -1,0 +1,112 @@
+@import "bootstrap-overrides";
+
+#index {
+  @media only screen and (min-width:100px) and (max-width:600px) {
+    background-attachment: scroll; 
+  }
+  background-color: $orangey-red;
+  text-align: justify !important;
+  color: white;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.37);
+  -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.37);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.37);
+  .text-fill {
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  .text-background {
+    color: #F3EFE1;
+    position: absolute;
+    text-align: justify;
+    text-transform: uppercase;
+  }
+  .container {
+    text-align: center;
+    position: relative;
+  }
+  .image-wrapper {
+//    -ms-transform: rotate(7deg); /* IE 9 */
+//    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+//    transform: rotate(7deg);
+    position: absolute;
+    top: 0px;
+    width:450px;
+    margin-left:-225px;
+    left: 50%;
+    z-index:1;
+    .bird-picture {
+      height: 504px;
+      border: 26px solid white;
+      border-bottom: 70px solid white;
+      -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.37);
+      -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.37);
+      box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.37);
+    }
+  }
+  .headline {
+//    -ms-transform: rotate(358deg); /* IE 9 */
+//    -webkit-transform: rotate(358deg); /* Chrome, Safari, Opera */
+//    transform: rotate(358deg);
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    z-index: 10;
+  }
+  .site-title {
+    background-color: $black-transparent;
+    padding: 3px 6px;
+    -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+  }
+  .description {
+    margin-bottom: 20px;
+  }
+  img.arrow-icon {
+    width: auto;
+  }
+}
+.down-button {
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  width:80px;
+  height:80px;
+  border-radius: 50%;
+  margin-left:-40px;
+  left: 50%;
+  z-index:1;
+  background-color: #529da3;
+  color: white;
+  font-size: 34px;
+  padding-top: 28px;
+  -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.37);
+  -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.37);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.37);
+  &:hover,
+  &:active,
+  &:visited {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+@media (min-width:100px) and (max-width:600px) {
+  #index {
+    .image-wrapper {
+      margin-top: -28px;
+      .bird-picture {
+        height: 300px;
+      }
+    }
+  }
+  .headline {
+    .site-title {
+      font-size: 22px;
+    }
+  }
+}
