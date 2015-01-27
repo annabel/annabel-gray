@@ -34,8 +34,8 @@
 //    transform: rotate(7deg);
     position: absolute;
     top: 0px;
-    width:450px;
-    margin-left:-225px;
+    width:460px;
+    margin-left:-230px;
     left: 50%;
     z-index:1;
     .bird-picture {
@@ -87,9 +87,13 @@
   -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.37);
   -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.37);
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.37);
+}
+
+a {
   &:hover,
   &:active,
-  &:visited {
+  &:visited,
+  &:focus {
     color: white;
     text-decoration: none;
   }
