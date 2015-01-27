@@ -14,3 +14,6 @@ gem 'haml'
 gem 'bootstrap-sass'
 
 gem 'rails_12factor', group: :production
+
+gem 'newrelic_rpm'
+
