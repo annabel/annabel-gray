@@ -3,28 +3,46 @@
 .work-block {
 	color: $text-color;
   position: relative;
-  .container {
-    padding-bottom: 30px;
-    padding-top: 10px;
+  .container-fluid {
+    .row {
+      .project-column {
+        height: 402px;
+        &.masterlock {
+          background: url('masterlock.jpg') no-repeat center;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+        }
+        &.scorpioncf {
+          background: url('scorpioncf.png') no-repeat center;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+        }
+        &.akta {
+          background: url('akta.png') no-repeat center;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+        }
+        &.secondsource {
+          background: url('secondsource.png') no-repeat center;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+        }
+      }
+    }
   }
 	.section-title {
     background-color: $light-blue-transparent;
     color: white;
     border-bottom: 1px solid $light-blue;
 	}
-	.description {
-		color: $dark-grey;
-	}
-  .work-item {
-    background-color: $off-white;
-    .project-column {
-      text-align: center;
-    }
-    .description {
-      color: $dark-grey;
-    }
-
-  }
   a {
     text-decoration: none;
     &:hover {

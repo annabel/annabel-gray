@@ -2,10 +2,10 @@
   color: #727878;
   padding-top: 40px;
   position: relative;
-  background-color: #F3EFE1;
+  background-color: white;
   h2 {
-    background-color: #F3EFE1;
-    color: #529da3;
+    background-color: white;
+    color: #9C2327;
   }
   .quick-bio {
     font-size: 16px;
@@ -33,6 +33,11 @@
         height: 150px;
         width: 150px;
         margin-bottom: 18px;
+      }
+      &.job {
+        a {
+          color: $akta-red;
+        }
       }
     }
   }
