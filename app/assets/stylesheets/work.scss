@@ -5,43 +5,52 @@
   position: relative;
   .container-fluid {
     .row {
+      background-color: white;
       .project-column {
         height: 402px;
+        position: relative;
+        overflow: hidden;
+        img {
+          height: auto;
+          width: 50%;
+        }
         &.masterlock {
-          background: url('masterlock.jpg') no-repeat center;
-          -webkit-background-size: cover;
-          -moz-background-size: cover;
-          -o-background-size: cover;
-          background-size: cover;
+
+          .overlay {
+
+          }
         }
         &.scorpioncf {
-          background: url('scorpioncf.png') no-repeat center;
-          -webkit-background-size: cover;
-          -moz-background-size: cover;
-          -o-background-size: cover;
-          background-size: cover;
+
+          .overlay {
+
+          }
         }
         &.akta {
-          background: url('akta.png') no-repeat center;
-          -webkit-background-size: cover;
-          -moz-background-size: cover;
-          -o-background-size: cover;
-          background-size: cover;
+          .overlay {
+          }
         }
         &.secondsource {
-          background: url('secondsource.png') no-repeat center;
-          -webkit-background-size: cover;
-          -moz-background-size: cover;
-          -o-background-size: cover;
-          background-size: cover;
+
+          .overlay {
+
+          }
+        }
+        .overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          //background-color: black;
+          opacity: 0.55;
         }
       }
     }
   }
 	.section-title {
-    background-color: $light-blue-transparent;
-    color: white;
-    border-bottom: 1px solid $light-blue;
+    background-color: white;
+    color: $brand-primary-grey;
 	}
   a {
     text-decoration: none;
@@ -62,9 +71,13 @@
       @extend a;
       color: $akta-red;
     }
-    .pinguino {
+    .masterlock {
       @extend a;
-      color: $pinguino-purple;
+      color: $masterlock-blue;
+    }
+    .mycareer {
+      @extend a;
+      color: $mycareer-blue;
     }
 
   }

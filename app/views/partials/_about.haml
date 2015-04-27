@@ -1,52 +1,31 @@
 .about-block
-  %h2#about.section-title -About-
-  .quick-bio
-    .bio-list
+  %h2#about.section-title { About }
+  .container.bio-snippet-container
+    .bio-snippet-row
+      .paragraph No, no, no. A vigilante is just a man lost in scramble for his own gratification. He can be destroyed or locked up. But if you make yourself more than just a man, if you devote yourself to an idel and if they can't stop you then you become something else entirely. Legend, Mr Wayne.
+  .quick-facts
+    .fact-list
       .bio-item.programming
         .icon-container
-          %img.bio-icon{:src => asset_path('file-browser.png')}
+          %img.bio-icon{:src => asset_path('codewindow.png')}
         .description
-          %strong Programming stuff:
-          %span Something something put a bird onit
+          .header Current Job
+          .item I'm a front end developer at <a target="_blank" href="http://akta.com/">ÄKTA</a> in Chicago, IL
       .bio-item.job
         .icon-container
           %img.bio-icon{:src => asset_path('id.png')}
         .description
-          %strong Job:
-          %span I'm a front end developer at <a target="_blank" href="http://akta.com/">ÄKTA</a> in Chicago, IL
+          .header Places I've lived
+          .item Aberdeen, Scotland; Austin + Houston, TX; London, England; Boulder, CO; Chicago, IL
       .bio-item.hometown
         .icon-container
           %img.bio-icon{:src => asset_path('home.png')}
         .description
-          %strong Hometown:
-          %span Born in Aberdeen, Scotland and moved to Houston, TX when I was eleven
+          .header College
+          .item I graduated from St. Edward's University in Austin, TX with a degree in photography
       .bio-item.android
         .icon-container
           %img.bio-icon{:src => asset_path('mobile.png')}
         .description
-          %strong Currently learning:
-          %span Android! My first Android app, Lobster Dog, was met with great commercial success
-      .bio-item.photography
-        .icon-container
-          %img.bio-icon{:src => asset_path('polaroid.png')}
-        .description
-          %strong Education:
-          %span I majored in photography at St. Edward's University in Austin, TX
-      .bio-item.videogames
-        .icon-container
-          %img.bio-icon{:src => asset_path('games.png')}
-        .description
-          %strong Games I'm currently playing:
-          %span Telltale's Game of Thrones, Zelda: A Link Between Worlds, and Hearthstone
-      .bio-item.travel
-        .icon-container
-          %img.bio-icon{:src => asset_path('location.png')}
-        .description
-          %strong Travel:
-          %span I like to travel and put a bird on it
-      .bio-item.languages
-        .icon-container
-          %img.bio-icon{:src => asset_path('comments.png')}
-        .description
-          %strong Languages:
-          %span Over the years I studied French, Arabic, German, and Russian. I've forgotten the majority of it...
+          .header Hobbies
+          .item Reading (see what I'm currently reading on <a href="#contact">Goodreads!</a>), playing video games, yoga
