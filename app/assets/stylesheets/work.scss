@@ -3,28 +3,55 @@
 .work-block {
 	color: $text-color;
   position: relative;
-  .container {
-    padding-bottom: 30px;
-    padding-top: 10px;
+  .container-fluid {
+    .row {
+      background-color: white;
+      .project-column {
+        height: 402px;
+        position: relative;
+        overflow: hidden;
+        img {
+          height: auto;
+          width: 50%;
+        }
+        &.masterlock {
+
+          .overlay {
+
+          }
+        }
+        &.scorpioncf {
+
+          .overlay {
+
+          }
+        }
+        &.akta {
+          .overlay {
+          }
+        }
+        &.secondsource {
+
+          .overlay {
+
+          }
+        }
+        .overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          //background-color: black;
+          opacity: 0.55;
+        }
+      }
+    }
   }
 	.section-title {
-    background-color: $light-blue-transparent;
-    color: white;
-    border-bottom: 1px solid $light-blue;
+    background-color: white;
+    color: $brand-primary-grey;
 	}
-	.description {
-		color: $dark-grey;
-	}
-  .work-item {
-    background-color: $off-white;
-    .project-column {
-      text-align: center;
-    }
-    .description {
-      color: $dark-grey;
-    }
-
-  }
   a {
     text-decoration: none;
     &:hover {
@@ -44,9 +71,13 @@
       @extend a;
       color: $akta-red;
     }
-    .pinguino {
+    .masterlock {
       @extend a;
-      color: $pinguino-purple;
+      color: $masterlock-blue;
+    }
+    .mycareer {
+      @extend a;
+      color: $mycareer-blue;
     }
 
   }

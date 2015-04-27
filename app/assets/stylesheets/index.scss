@@ -1,10 +1,10 @@
 @import "bootstrap-overrides";
 
 #index {
-  @media only screen and (min-width:100px) and (max-width:600px) {
-    background-attachment: scroll; 
-  }
-  background-color: $orangey-red;
+  //@media only screen and (min-width:100px) and (max-width:600px) {
+  //  background-attachment: scroll;
+  //}
+  background-color: $brand-primary-grey;
   text-align: justify !important;
   color: white;
   position: relative;
@@ -19,19 +19,16 @@
     right: 0;
   }
   .text-background {
-    color: #F3EFE1;
+    color: rgb(70, 73, 85);
     position: absolute;
     text-align: justify;
     text-transform: uppercase;
   }
-  .container {
+  .index-container {
     text-align: center;
     position: relative;
   }
   .image-wrapper {
-//    -ms-transform: rotate(7deg); /* IE 9 */
-//    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
-//    transform: rotate(7deg);
     position: absolute;
     top: 0px;
     width:460px;
@@ -48,9 +45,6 @@
     }
   }
   .headline {
-//    -ms-transform: rotate(358deg); /* IE 9 */
-//    -webkit-transform: rotate(358deg); /* Chrome, Safari, Opera */
-//    transform: rotate(358deg);
     text-align: center;
     display: inline-block;
     position: relative;
@@ -80,13 +74,19 @@
   margin-left:-40px;
   left: 50%;
   z-index:1;
-  background-color: #529da3;
+  background-color: $brand-primary-red;
   color: white;
   font-size: 34px;
   padding-top: 28px;
+  padding-left: 4px;
   -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.37);
   -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.37);
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.37);
+  transition: font-size 0.5s ease;
+  &:hover,
+  &:active, {
+    font-size: 42px;
+  }
 }
 
 a {

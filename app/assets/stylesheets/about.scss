@@ -1,16 +1,31 @@
 .about-block {
-  color: #727878;
   padding-top: 40px;
   position: relative;
-  background-color: #F3EFE1;
+  background-color: white;
   h2 {
-    background-color: #F3EFE1;
-    color: #529da3;
+    background-color: white;
+    color: $brand-primary-red;
   }
-  .quick-bio {
+  .bio-snippet-container {
+    padding-bottom: 45px;
+    .bio-snippet-row {
+      @include make-row();
+      .paragraph {
+        @include make-sm-column(24);
+        color: $text-grey;
+        font-size: 19px;
+        font-weight: 100;
+      }
+    }
+  }
+  .quick-facts {
     font-size: 16px;
     margin-top: 30px;
-    .bio-list {
+    background-color: $brand-primary-red;
+    color: white;
+    font-weight: 100;
+    padding: 50px 0 10px 0;
+    .fact-list {
       text-align: center;
     }
     .bio-item {
@@ -26,13 +41,22 @@
       @media (min-width: $screen-md-min) {
         width: 23%;
       }
-      strong {
-        color: rgb(82, 81, 81);
+      .header {
+        font-weight: 400;
+        font-size: 18px;
+      }
+      .item {
+        font-weight: 100;
       }
       .bio-icon {
         height: 150px;
         width: 150px;
         margin-bottom: 18px;
+      }
+      &.job {
+        a {
+          color: $akta-red;
+        }
       }
     }
   }

@@ -1,26 +1,32 @@
 .work-block
-  %h2#work.section-title -Recent Work-
+  %h2#work.section-title { Recent Work }
 
-  .work-item
-    .container
-      .row
-        .col-md-12.project-column
-          %a{href: 'https://secondsource.herokuapp.com', :target=> '_blank'}
-            %h3.pinguino Pingüino
-            %img{:src => asset_path("pinguino.png")}
-        .col-md-12.project-column
-          %a{href: 'https://scorpioncrossfit.net', :target=> '_blank'}
-            %h3.crossfit Scorpion Crossfit
-            %img{:src => asset_path("macbook-crossfit.png")}
-
-  .work-item
-    .container
-      .row
-        .col-md-12.project-column
-          %a{href: 'https://secondsource.herokuapp.com', :target=> '_blank'}
-            %h3.secondsource SecondSource
-            %img{:src => asset_path("macbook-secondsource.png")}
-        .col-md-12.project-column
-          %a{href: 'https://akta.com', :target => '_blank'}
-            %h3.akta ÄKTA
-            %img{:src => asset_path("akta.png")}
+  .container-fluid
+    .row
+      .col-sm-12.project-column.masterlock
+        .overlay
+        %a{href: 'https://secondsource.herokuapp.com', :target=> '_blank'}
+          %h3.masterlock Masterlock
+      .col-sm-12.project-column.flo
+        .overlay
+        %a{href: 'https://flomusic.com', :target=> '_blank'}
+          %h3.flo Flo
+      .col-sm-12.project-column.mycareer
+        .overlay
+        %a{href: 'http://www.chicagotribune.com/bluesky/originals/chi-exelon-mycareer-app-bsi-20141224-story.html', :target=> '_blank'}
+          %h3.mycareer myCareer
+      .col-sm-12.project-column.scorpioncf
+        .overlay
+        %a{href: 'https://scorpioncrossfit.net', :target=> '_blank'}
+          %h3.crossfit Scorpion Crossfit
+          %img{:src => asset_path("scorpioncf-display.png")}
+      .col-sm-12.project-column.akta
+        .overlay
+        %a{href: 'https://akta.com', :target => '_blank'}
+          %h3.akta ÄKTA
+          %img{:src => asset_path("akta-display.png")}
+      .col-sm-12.project-column.secondsource
+        .overlay
+        %a{href: 'https://secondsource.herokuapp.com', :target=> '_blank'}
+          %h3.secondsource SecondSource
+          %img{:src => asset_path("secondsource-display.png")}

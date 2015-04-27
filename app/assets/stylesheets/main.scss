@@ -1,21 +1,11 @@
+//@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
 body {
-	font-family: "museo-sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .content {
 	position: relative;
-}
-
-// h1,
-// h2,
-// h3 {
-// font-family: "kepler-std-condensed-display";
-// }
-
-body {
-  // margin-top: 50px;
-//  font-family: 'Casper', 'san-serif';
-  font-family: 'Roboto', sans-serif;
 }
 
 .row {
@@ -26,7 +16,6 @@ body {
 
 .section-title {
   padding: 30px 0px 30px 0px;
-  background-color: $title-banner-background;
   text-align: center;
   margin-bottom: 0 !important;
   margin-top: 0!important;
