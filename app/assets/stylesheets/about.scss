@@ -4,7 +4,7 @@
   background-color: white;
   h2 {
     background-color: white;
-    color: $brand-primary-red;
+    color: $seafoam-green;
   }
   .bio-snippet-container {
     padding-bottom: 45px;
@@ -22,7 +22,7 @@
   .quick-facts {
     font-size: 16px;
     margin-top: 30px;
-    background-color: #2AC9B5;
+    background-color: $seafoam-green;
     color: white;
     font-weight: 100;
     padding: 50px 0 10px 0;
@@ -59,12 +59,20 @@
         margin-top: 20px;
         font-weight: 400;
         font-size: 20px;
+        margin-bottom: 5px;
         color: ghostwhite;
         text-transform: uppercase;
         font-family: 'PT Mono', monospace;
       }
       .item {
         font-weight: 100;
+        a {
+          color: #464955;
+          font-weight: normal;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
       }
     }
   }

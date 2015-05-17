@@ -5,9 +5,12 @@
     @include triangle(93px);
   }
   .container-fluid {
-    .row {
+    .work-row {
+      @include make-row();
       background-color: white;
       .project-column {
+        @include make-md-column(12);
+        padding: 0;
         height: 400px;
         position: relative;
         overflow: hidden;
@@ -39,30 +42,30 @@
           }
         }
         &.flo {
-          background-color: #ff7665;
+          background-color: $flo-pink;
           border-left: none;
           border-top: none;
         }
         &.masterlock {
-          background-color: #8870BE;
+          background-color: $masterlock-purple;
           border-top: none;
           border-right: none;
         }
         &.mycareer {
-          background-color: #62DADC;
+          background-color: $mycareer-blue;
           border-left: none;
         }
         &.scorpioncf {
-          background-color: #FED973;
+          background-color: $crossfit-gold;
           border-right: none;
         }
         &.akta {
-          background-color: #FF5269;
+          background-color: $akta-red;
           border-left: none;
           border-bottom: none;
         }
         &.secondsource {
-          background-color: #AFD35D;
+          background-color: $secondsource-green;
           border-right: none;
           border-bottom: none;
         }
@@ -73,19 +76,125 @@
     background-color: white;
     color: $brand-primary-grey;
 	}
-  a {
-    color: white;
-    text-decoration: none;
-    &:hover {
-      text-decoration: none;
-      color: black;      
-      transition: color 1s ease;
-    }
-  }
 }
-
 @media (min-width:700px) and (max-width:992px) {
   .project-column {
     padding: 0 65px;
+  }
+}
+
+
+//Work Overlays
+.hover-tile-outer {
+  padding: 0;
+  cursor: pointer;
+  .hover-tile-container {
+    height: 400px;
+    overflow: hidden;
+    @media (max-width:472px) {
+      height: 350px;
+    }
+  }
+  .hover-tile-container {
+    &:hover,
+    &.active {
+      .hover-tile-hidden {
+        height: 400px;
+        transform: translate(0, -100%);
+        @media (max-width: 472px) {
+          height: 350px;
+        }
+      }
+    }
+  }
+  .hover-tile {
+    transition: all, 0.3s ease-in-out;
+    padding: 0;
+    background: inherit;
+    color: white;
+    height: inherit;
+    overflow: hidden;
+  }
+  .hover-tile-hidden {
+    position: relative;
+    @media (max-width: $screen-md-min) {
+      border: none;
+    }
+    &.flo {
+      background-color: $flo-pink;
+    }
+    &.masterlock {
+      background-color: $masterlock-purple;
+    }
+    &.mycareer {
+      background-color: $mycareer-blue;
+    }
+    &.scorpioncf {
+      background-color: $crossfit-gold;
+    }
+    &.akta {
+      background-color: $akta-red;
+    }
+    &.secondsource {
+      background-color: $secondsource-green;
+    }
+    .tile-content {
+      @include vertically-align();
+      .work-name {
+        font-size: 32px;
+        margin-bottom: 30px;
+        font-weight: 100;
+      }
+      a {
+        border: 4px solid white;
+        border-radius: 1px;
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        width: 230px;
+        text-transform: uppercase;
+        background-color:transparent;
+        text-decoration: none;
+        &:hover {
+          text-decoration: none;
+          background-color: white;
+          transition: all 0.5s ease;
+          &.flo-btn {
+            color: $flo-pink;
+          }
+          &.masterlock-btn {
+            color: $masterlock-purple;
+          }
+          &.mycareer-btn {
+            color: $mycareer-blue;
+          }
+          &.scorpioncf-btn {
+            color: $crossfit-gold;
+          }
+          &.akta-btn {
+            color: $akta-red;
+          }
+          &.secondsource-btn {
+            color: $secondsource-green;
+          }
+        }
+      }
+      .coming-soon {
+        font-size:15px;
+        font-weight: 100;
+        font-style: italic;
+      }
+      .header {
+        margin-top: 30px;
+        font-size: 18px;
+        font-weight: 100;
+      }
+      .skills {
+        font-size: 16px;
+        font-family: 'PT Mono', monospace;
+        font-style: italic;
+        padding: 5px 25px;
+      }
+    }
   }
 }

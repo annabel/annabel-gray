@@ -8,17 +8,7 @@
   -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.37);
   -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.37);
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.37);
-  .text-fill {
-    position: absolute;
-    left: 0;
-    right: 0;
-  }
-  .text-background {
-    color: rgb(70, 73, 85);
-    position: absolute;
-    text-align: justify;
-    text-transform: uppercase;
-  }
+
   .index-container {
     text-align: center;
     position: relative;
@@ -26,7 +16,7 @@
   .image-wrapper {
     position: absolute;
     top: 0px;
-    width:460px;
+    width: 460px;
     margin-left:-230px;
     left: 50%;
     z-index:1;

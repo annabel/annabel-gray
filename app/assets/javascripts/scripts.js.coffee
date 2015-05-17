@@ -3,19 +3,12 @@ $(document).ready ->
     Typekit.load()
   setIndex()
   animateScroll()
-  $(".text-fill").textfill({
-    maxFontPixels: 130
-  })
+  $(".text-fill").textfill()
 
-  $(".navbar-toggle").on "click", ->
-    $(".navbar-toggle").toggleClass('open')
-    $(".navbird").toggleClass('open')
 
 $(window).resize ->
   setIndex()
-  $(".text-fill").textfill({
-    maxFontPixels: 130
-  })
+  $(".text-fill").textfill()
 
 setIndex = ->
   console.log 'helo'
@@ -28,7 +21,7 @@ setIndex = ->
   $marginTopPic = $indexHeight/5
 
   $index.css({"height": $indexHeight})
-  $('.text-fill').css({"height": $indexHeight + 120 + 'px'})
+#  $('.text-fill').css({"height": $indexHeight + 120 + 'px'})
   $headline.css({"margin-top": $marginTop})
   $birdPicture.css({"margin-top": $marginTopPic})
   $('.down-button').css({"margin-top": $indexHeight - 45 + 'px'})

@@ -1,15 +1,25 @@
 .contact-block
   %h2#contact.section-title Contact
   .triangle
-  .contact-content
-    .container
-      .row
-        .col-xs-4
-          %a{href: 'https://twitter.com/smallishlemur'}
-            %img.twitter-img{:src => asset_path("twitter.png", :target => '_blank' )}
-        .col-xs-4
-          %a{href: 'www.linkedin.com/in/annabeldunstone/'}
-            %img.linkedin-img{:src => asset_path("linkedin.png")}
-        .col-xs-4
-          %a{href: 'https://github.com/annabeldunstone'}
-            %img.github-img{:src => asset_path("github.png")}
+
+
+.footer-block
+  .text-fill
+    %span.text-background JavaScript • jQuery • haml • HTML5 • PHOTOSHOP • SCSS • ANGULAR.JS • RUBY • RAILS • C++(just kidding) • LESS • postgresql • PHP • WORDPRESS • Java(nur ein bisschen) • SWIG • FINAL CUT PRO • InDesign • PIVOTAL • BUZZWORDS • COFFEESCRIPT  • jQuery • haml • HTML5 • PHOTOSHOP • SCSS • ANGULAR.JS • RUBY • RAILS • C++(just kidding) • LESS • postgresql • PHP • WORDPRESS • Java(nur ein bisschen) • SWIG • FINAL CUT PRO • InDesign • PIVOTAL • BUZZWORDS • COFFEESCRIPT  •
+  .contact-content.container
+    .icon-row
+      .email-container
+        = mail_to "annabel.dunstone@gmail.com"
+      .icon-container
+        = link_to "https://dribbble.com/annabeldunstone", target: "_blank" do
+          %img.contact-icon.dribbble{:src => asset_path("dribbble.png")}
+        = link_to "https://www.linkedin.com/in/annabeldunstone", target: "_blank" do
+          %img.contact-icon.linkedin{:src => asset_path("linkedin.png")}
+        %a{href: 'https://github.com/annabeldunstone'}
+          %img.contact-icon.github{:src => asset_path("github.png")}
+        -#%a{href: 'https://bitbucket.org/annabeldunstone'}
+        -#  %img.contact-icon.bitbucket{:src => asset_path("bitbucket.png")}
+        %a{href: 'https://instagram.com/annabeldunstone/'}
+          %img.contact-icon.instagram{:src => asset_path("instagram.png")}
+        %a{href: 'http://www.goodreads.com/user/show/29443888-annabel-dunstone'}
+          %img.contact-icon.goodreads{:src => asset_path("goodreads.png")}

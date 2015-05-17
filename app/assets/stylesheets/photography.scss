@@ -1,9 +1,15 @@
 .photography-block {
   background-color: #E0E0E0;
   position: relative;
-  border-top: 8px solid white;
+  .section-title {
+    background-color: white;
+    color: $text-grey;
+  }
+  .triangle {
+    @include triangle(93px);
+  }
   .photography-container {
-    padding-bottom: 30px;
+    padding: 30px 15px;
   }
   .photography-row {
     @include make-row();
