@@ -10,6 +10,7 @@
     padding-bottom: 45px;
     .bio-snippet-row {
       @include make-row();
+      position: relative;
       .paragraph {
         @include make-sm-column(24);
         color: $text-grey;
@@ -21,10 +22,14 @@
   .quick-facts {
     font-size: 16px;
     margin-top: 30px;
-    background-color: $brand-primary-red;
+    background-color: #2AC9B5;
     color: white;
     font-weight: 100;
     padding: 50px 0 10px 0;
+    position: relative;
+    .triangle {
+      @include triangle(0);
+    }
     .fact-list {
       text-align: center;
     }
@@ -41,22 +46,25 @@
       @media (min-width: $screen-md-min) {
         width: 23%;
       }
+      .icon-container {
+        .bio-icon {
+          height: 65px;
+          &.photo {
+            height: 55px;
+            margin-bottom: 10px;
+          }
+        }
+      }
       .header {
+        margin-top: 20px;
         font-weight: 400;
-        font-size: 18px;
+        font-size: 20px;
+        color: ghostwhite;
+        text-transform: uppercase;
+        font-family: 'PT Mono', monospace;
       }
       .item {
         font-weight: 100;
-      }
-      .bio-icon {
-        height: 150px;
-        width: 150px;
-        margin-bottom: 18px;
-      }
-      &.job {
-        a {
-          color: $akta-red;
-        }
       }
     }
   }

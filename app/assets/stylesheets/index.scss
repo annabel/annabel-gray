@@ -1,9 +1,4 @@
-@import "bootstrap-overrides";
-
 #index {
-  //@media only screen and (min-width:100px) and (max-width:600px) {
-  //  background-attachment: scroll;
-  //}
   background-color: $brand-primary-grey;
   text-align: justify !important;
   color: white;
@@ -74,7 +69,7 @@
   margin-left:-40px;
   left: 50%;
   z-index:1;
-  background-color: $brand-primary-red;
+  background-color: #FF5269;
   color: white;
   font-size: 34px;
   padding-top: 28px;

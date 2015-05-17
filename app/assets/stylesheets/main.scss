@@ -1,5 +1,5 @@
-//@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
-
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=PT+Mono|Abril+Fatface);
 body {
   font-family: 'Open Sans', sans-serif;
 }
@@ -19,4 +19,29 @@ body {
   text-align: center;
   margin-bottom: 0 !important;
   margin-top: 0!important;
+}
+
+@mixin vertically-align() {
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin horizontally-align() {
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+@mixin triangle($top) {
+  top: $top;
+  @include horizontally-align();
+  position: absolute;
+  z-index: 1;
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+  border-top: 25px solid white;
 }

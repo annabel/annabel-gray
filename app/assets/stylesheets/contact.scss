@@ -1,8 +1,13 @@
-@import "bootstrap-overrides";
-
 .contact-block {
+  position: relative;
+  .section-title {
+  }
+	.triangle {
+    @include triangle(93px);
+  }
 	.contact-content {
-	  background-color: $dark-grey;
+	  background-color: #2AC9B5;
+    padding: 60px 0;
 	  .twitter-img,
 	  .linkedin-img,
 	  .github-img {
