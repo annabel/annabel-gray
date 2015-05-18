@@ -12,7 +12,7 @@ $(window).resize ->
 handleFormSubmit = ->
   $('#contact-form').on 'submit', (e) ->
     e.preventDefault()
-    $('.error-message, .message-success').hide()
+    $('.error-message, .message-success').empty()
     
     request = $.ajax
       type: 'POST'
@@ -22,7 +22,7 @@ handleFormSubmit = ->
 
     request.done (response) ->
       $('.message-success').text('Message sent. Thanks!').show()
-      $('.contact-form-submit').remove()
+      $('.contact-form-submit').addClass('disabled')
 
     request.fail (response) ->
       errors = response.responseJSON
@@ -33,12 +33,8 @@ handleFormSubmit = ->
 
 setIndex = ->
   $index = $('#index')
-
   $indexHeight = $(window).height() - 60
-
   $index.css({"height": $indexHeight})
-#  $('.text-fill').css({"height": $indexHeight + 120 + 'px'})
-
   $('.down-button').css({"margin-top": $indexHeight - 45 + 'px'})
 
 
