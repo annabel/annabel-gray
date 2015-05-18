@@ -1,8 +1,7 @@
 $(document).ready ->
-  try
-    Typekit.load()
   setIndex()
   animateScroll()
+  handleFormSubmit()
   $(".text-fill").textfill()
 
 
@@ -10,20 +9,36 @@ $(window).resize ->
   setIndex()
   $(".text-fill").textfill()
 
+handleFormSubmit = ->
+  $('#contact-form').on 'submit', (e) ->
+    e.preventDefault()
+    $('.error-message, .message-success').hide()
+    
+    request = $.ajax
+      type: 'POST'
+      url: '/send_message'
+      dataType: 'json'
+      data: $(this).serialize()
+
+    request.done (response) ->
+      $('.message-success').text('Message sent. Thanks!').show()
+      $('.contact-form-submit').remove()
+
+    request.fail (response) ->
+      errors = response.responseJSON
+      $('.name-error').text(errors.name[0]).show() if errors.name
+      $('.email-error').text(errors.email[0]).show() if errors.email
+      $('.content-error').text(errors.content[0]).show() if errors.content
+      
+
 setIndex = ->
-  console.log 'helo'
   $index = $('#index')
-  $headline = $('.headline')
-  $birdPicture = $('.bird-picture')
 
   $indexHeight = $(window).height() - 60
-  $marginTop = $indexHeight/1.9
-  $marginTopPic = $indexHeight/5
 
   $index.css({"height": $indexHeight})
 #  $('.text-fill').css({"height": $indexHeight + 120 + 'px'})
-  $headline.css({"margin-top": $marginTop})
-  $birdPicture.css({"margin-top": $marginTopPic})
+
   $('.down-button').css({"margin-top": $indexHeight - 45 + 'px'})
 
 

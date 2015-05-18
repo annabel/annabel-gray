@@ -17,4 +17,4 @@ gem 'font-awesome-sass'
 gem 'rails_12factor', group: :production
 
 gem 'newrelic_rpm'
-
+gem 'figaro'

@@ -2,6 +2,28 @@
   %h2#contact.section-title Contact
   .triangle
 
+.row
+  .col-md-8
+    %h2 How can we help you?
+    = form_for :message, url: send_message_path, method: :post, html: { role: 'form', id: 'contact-form' } do |f|
+      = f.label(:human, "If you're a human, leave this unchecked", style: "display: none")
+      = f.check_box(:human, style: "display: none")
+      .form-group
+        = f.label(:name, "Name:")
+        = f.text_field :name, class: "form-control"
+        .name-error.error-message
+      .form-group
+        = f.label(:email, "Email:")
+        = f.text_field :email, class: "form-control"
+        .email-error.error-message
+      .form-group
+        = f.label(:content, "Message:")
+        = f.text_area :content, class: "form-control"
+        .content-error.error-message
+      .form-group
+        = submit_tag "Submit", class: "btn btn-primary contact-form-submit"
+        .message-success
+
 
 .footer-block
   .text-fill

@@ -1,13 +1,14 @@
-#index
+#index.container-fluid
+  .index-row
+    .computer
+      = image_tag "imac-cartoon.png"
+    .text
+      .name
+        .first Annabel
+        .last Dunstone
+      .title Web Developer
 
 
-
-  .index-container
-    .image-wrapper
-      %img.bird-picture{:src => asset_path("edit.jpg")}
-    .headline
-      %h1.site-title ANNABEL DUNSTONE
-      %h2.site-title Web Developer
 
 
 %a.glyphicon.glyphicon-chevron-down.down-button{href: '#about'}
