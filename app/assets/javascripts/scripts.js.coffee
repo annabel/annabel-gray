@@ -3,7 +3,6 @@ $(document).ready ->
   animateScroll()
   handleFormSubmit()
   $(".text-fill").textfill()
-#  addStuff()
 
 
 $(window).resize ->
