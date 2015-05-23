@@ -23,8 +23,8 @@
     font-size: 16px;
     margin-top: 30px;
     background-color: $seafoam-green;
-    color: white;
-    font-weight: 100;
+    color: rgba(0, 0, 0, 0.61);
+    font-weight: 400;
     padding: 50px 0 10px 0;
     position: relative;
     .triangle {
@@ -62,13 +62,13 @@
         margin-bottom: 5px;
         color: ghostwhite;
         text-transform: uppercase;
-        font-family: 'PT Mono', monospace;
+        font-family: 'Roboto Slab', serif;
       }
       .item {
-        font-weight: 100;
         a {
           color: rgba(0, 0, 0, 0.43);
           font-weight: normal;
+          color: white;
           &:hover {
             text-decoration: underline;
           }

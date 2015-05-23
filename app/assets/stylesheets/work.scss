@@ -1,8 +1,13 @@
 .work-block {
 	color: $text-color;
   position: relative;
+  .section-title {
+    color: $text-grey;
+    background-color: white;
+  }
   .triangle {
     @include triangle(93px);
+    z-index: 11;
   }
   .container-fluid {
     .work-row {
@@ -74,10 +79,6 @@
       }
     }
   }
-	.section-title {
-    background-color: white;
-    color: $brand-primary-grey;
-	}
 }
 @media (min-width:700px) and (max-width:992px) {
   .project-column {
@@ -97,16 +98,64 @@
       height: 350px;
     }
   }
-  .hover-tile-container {
-    &:hover,
-    &.active {
-      .hover-tile-hidden {
-        height: 400px;
-        transform: translate(0, -100%);
-        @media (max-width: 472px) {
-          height: 350px;
+  .glyphicon-remove {
+    display: none;
+    font-size: 25px;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+  }
+  .work-info-button {
+    display: none;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    z-index: 9;
+    background-color: $seafoam-green;
+    -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.37);
+    -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.37);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.37);
+    .glyphicon-plus {
+      font-size: 25px;
+      color: white;
+    }
+  }
+  @media (max-width : $screen-md-max) {
+    .hover-tile-container {
+      &.active-button {
+        .hover-tile-hidden {
+          height: 400px;
+          transform: translate(0, -100%);
+          @media (max-width: 472px) {
+            height: 350px;
+          }
+          .glyphicon-remove {
+            display: block;
+          }
         }
       }
+    }
+  }
+  @media (min-width: $screen-md-min) {
+    .hover-tile-container {
+      &:hover,
+      &.active {
+        .hover-tile-hidden {
+          height: 400px;
+          transform: translate(0, -100%);
+          @media (max-width: 472px) {
+            height: 350px;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: $screen-md-min) {
+    .work-info-button {
+      display: block;
     }
   }
   .hover-tile {
@@ -116,8 +165,10 @@
     color: white;
     height: inherit;
     overflow: hidden;
+    position: relative;
   }
   .hover-tile-hidden {
+    z-index:10;
     position: relative;
     @media (max-width: $screen-md-min) {
       border: none;
@@ -193,7 +244,7 @@
       }
       .skills {
         font-size: 16px;
-        font-family: 'PT Mono', monospace;
+        font-family: 'Roboto Slab', serif;
         font-style: italic;
         padding: 5px 25px;
       }

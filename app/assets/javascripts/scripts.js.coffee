@@ -2,6 +2,7 @@ $(document).ready ->
   setIndex()
   animateScroll()
   handleFormSubmit()
+  displayWorkInfo()
   $(".text-fill").textfill()
 
 
@@ -50,6 +51,12 @@ animateScroll = (targetPos) ->
 addStuff = ->
   if window.mobileAndTabletcheck()
     alert 'mobile'
+
+displayWorkInfo = ->
+  $('.work-info-button').on 'click', ->
+    $(this).parent().parent().addClass('active-button')
+  $('.glyphicon-remove').on 'click', ->
+    $(this).parent().parent().removeClass('active-button')
 
 window.mobileAndTabletcheck = ->
   check = false

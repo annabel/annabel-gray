@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
-@import url(http://fonts.googleapis.com/css?family=PT+Mono);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,700);
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -7,6 +7,11 @@ body {
 
 .content {
 	position: relative;
+}
+
+.section-title {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
 }
 
 .row {
@@ -35,14 +40,6 @@ body {
   -ms-transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-}
-
-@mixin bottom-align() {
-  position: relative;
-  top: 68%;
-  -ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
 }
 
 @mixin triangle($top) {

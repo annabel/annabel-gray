@@ -7,18 +7,24 @@
       .project-column.flo.hover-tile-outer
         .hover-tile-container
           .hover-tile.hover-tile-visible
+            %button.btn.work-info-button
+              %span.glyphicon.glyphicon-plus
             = image_tag "flo.png"
           .hover-tile.hover-tile-hidden.flo
+            .glyphicon.glyphicon-remove
             .tile-content
               .work-name Flo Music
               = link_to "View Site", "http://flomusic.com/", class: "btn flo-btn", target: "_blank"
               .header Skills strengthened:
               .skills Wordpress, PHP, HTML5, SASS, JavaScript, Bootstrap, Grunt
       .project-column.masterlock.hover-tile-outer
-        .hover-tile-container
+        .hover-tile-container.active-button
           .hover-tile.hover-tile-visible
             = image_tag "masterlock.png", class: "masterlock-image"
+            %button.btn.work-info-button
+              %span.glyphicon.glyphicon-plus
           .hover-tile.hover-tile-hidden.masterlock
+            -#.glyphicon.glyphicon-remove
             .tile-content
               .work-name Masterlock
               .coming-soon Coming Soon to the Google Play Store!
@@ -28,7 +34,10 @@
         .hover-tile-container
           .hover-tile.hover-tile-visible
             = image_tag "mycareer.png"
+            %button.btn.work-info-button
+              %span.glyphicon.glyphicon-plus
           .hover-tile.hover-tile-hidden.mycareer
+            .glyphicon.glyphicon-remove
             .tile-content
               .work-name Exelon myCareer
               = link_to "View Article", "http://www.chicagotribune.com/bluesky/originals/chi-exelon-mycareer-app-bsi-20141224-story.html", class: "btn mycareer-btn", target: "_blank"
@@ -38,7 +47,10 @@
         .hover-tile-container
           .hover-tile.hover-tile-visible
             = image_tag "scorpioncf.png"
+            %button.btn.work-info-button
+              %span.glyphicon.glyphicon-plus
           .hover-tile.hover-tile-hidden.scorpioncf
+            .glyphicon.glyphicon-remove
             .tile-content
               .work-name Scorpion Crossfit
               = link_to "View App", "https://www.scorpioncrossfit.net/", class: "btn scorpioncf-btn", target: "_blank"
@@ -48,7 +60,10 @@
         .hover-tile-container
           .hover-tile.hover-tile-visible
             = image_tag "akta.png"
+            %button.btn.work-info-button
+              %span.glyphicon.glyphicon-plus
           .hover-tile.hover-tile-hidden.akta
+            .glyphicon.glyphicon-remove
             .tile-content
               .work-name AKTA.com
               = link_to "View Site", "http://akta.com/", class: "btn akta-btn", target: "_blank"
@@ -58,7 +73,10 @@
         .hover-tile-container
           .hover-tile.hover-tile-visible
             = image_tag "secondsource.png"
+            %button.btn.work-info-button
+              %span.glyphicon.glyphicon-plus
           .hover-tile.hover-tile-hidden.secondsource
+            .glyphicon.glyphicon-remove
             .tile-content
               .work-name SecondSource
               = link_to "View App", "https://secondsource.herokuapp.com", class: "btn secondsource-btn", target: "_blank"

@@ -8,17 +8,18 @@
   .index-row {
     @include make-row();
     @include vertically-align();
+    text-align: center;
     height: 390px;
     position: relative;
     @media (max-width: $screen-md-min) {
       height: auto;
     }
     .computer {
-      @include make-md-column(14);
-      text-align: right;
+      display: inline-block;
       img {
         width: auto;
         @media (max-width: $screen-md-min) {
+          @include make-md-column(14);
           height: 350px;
         }
         @media (min-width: $screen-md-min) {
@@ -31,41 +32,48 @@
       @media (max-width: $screen-md-min) {
         text-align: center;
         width: auto;
+        display: block;
       }
     }
     .text {
-      @include make-md-column(10);
       color: white;
-      text-align: left;
+      display: inline-block;
       position: relative;
+      text-align: left;
       @media (min-width: $screen-md-min) {
-        @include bottom-align();
+        vertical-align: text-top;
+        margin-top: -15px;
+        margin-left: 25px;
       }
       @media (max-width: $screen-md-min) {
+        @include make-md-column(10);
+        display: block;
+        vertical-align: text-top;
+        margin-top: 20px;
         text-align: center;
-        margin-top: 16px;
+        margin-left: 0;
       }
+      //@media(min-width: 993px) and (max-width: $screen-md-max) {
+      //  //margin-top: -31px;
+      //}
       .name {
         font-size: 60px;
         line-height: .9;
+        letter-spacing: 3px;
+        font-weight: 100;
         @media (max-width: 535px) {
           font-size: 30px;
         }
-        .first {
-          letter-spacing: 3px;
-        }
-        .last {
-          font-weight: 100;
-          letter-spacing: -1px;
-        }
       }
       .title {
+        font-size: 30px;
+        letter-spacing: 5px;
+        margin-top: 20px;
+        font-family: 'Roboto Slab', serif;
+        font-weight: 100;
         @media (max-width: 535px) {
           font-size: 18px;
         }
-        font-size: 30px;
-        letter-spacing: 4px;
-        margin-top: 20px;
       }
     }
   }
