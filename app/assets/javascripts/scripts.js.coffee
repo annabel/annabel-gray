@@ -53,9 +53,9 @@ addStuff = ->
     alert 'mobile'
 
 displayWorkInfo = ->
-  $('.work-info-button').on 'click', ->
+  $('.work-info-button').on 'mousedown touchstart', ->
     $(this).parent().parent().addClass('active-button')
-  $('.glyphicon-remove').on 'click', ->
+  $('.glyphicon-remove').on 'mousedown touchstart', ->
     $(this).parent().parent().removeClass('active-button')
 
 window.mobileAndTabletcheck = ->
