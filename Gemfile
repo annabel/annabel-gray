@@ -12,7 +12,6 @@ gem 'jquery-rails'
 
 gem 'haml'
 gem 'bootstrap-sass'
-gem 'font-awesome-sass'
 
 gem 'rails_12factor', group: :production
 
