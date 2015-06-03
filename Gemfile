@@ -12,6 +12,7 @@ gem 'jquery-rails'
 
 gem 'haml'
 gem 'bootstrap-sass'
+gem "respond-rails", "~> 1.0"
 
 gem 'rails_12factor', group: :production
 

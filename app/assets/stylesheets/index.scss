@@ -95,10 +95,11 @@
   -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.37);
   -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.37);
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.37);
-  transition: font-size 0.5s ease;
+  transition: font-size 0.5s ease, background-color 0.5s ease;
   &:hover,
   &:active, {
     font-size: 42px;
+    background-color: darken($seafoam-green, 5%);
   }
   @media (max-width: 535px) {
     width: 60px;

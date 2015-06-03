@@ -102,28 +102,42 @@
     display: none;
     font-size: 25px;
     position: absolute;
-    right: 25px;
+    left: 25px;
     top: 25px;
   }
   .work-info-button {
-    display: none;
+    //display: none;
     position: absolute;
-    right: 30px;
+    left: 30px;
     bottom: 30px;
     height: 70px;
     width: 70px;
     border-radius: 50%;
     z-index: 9;
+    text-align: center;
     background-color: $seafoam-green;
+    transition: background-color 0.3s ease-in-out;
     -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.37);
     -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.37);
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.37);
+    &:hover,
+    &:active {
+      background-color: darken($seafoam-green, 3%);
+    }
     .glyphicon-plus {
       font-size: 25px;
       color: white;
+      margin-left: 3px;
+    }
+    @media (max-width: $screen-sm-min) {
+      height: 55px;
+      width: 55px;
+      .glyphicon-plus {
+        font-size: 20px;
+      }
     }
   }
-  @media (max-width : $screen-md-max) {
+  //@media (max-width : $screen-md-max) {
     .hover-tile-container {
       &.active-button {
         .hover-tile-hidden {
@@ -140,10 +154,10 @@
         }
       }
     }
-  }
+  //}
   @media (min-width: $screen-md-min) {
     .hover-tile-container {
-      &:hover,
+      //&:hover,
       &.active {
         .hover-tile-hidden {
           height: 400px;
@@ -178,22 +192,22 @@
       border: none;
     }
     &.flo {
-      background-color: $flo-pink;
+      background-color: darken($flo-pink, 5%);
     }
     &.masterlock {
-      background-color: $masterlock-purple;
+      background-color: darken($masterlock-purple, 5%);
     }
     &.mycareer {
-      background-color: $mycareer-blue;
+      background-color: darken($mycareer-blue, 5%);
     }
     &.scorpioncf {
-      background-color: $crossfit-gold;
+      background-color: darken($crossfit-gold, 5%);
     }
     &.akta {
-      background-color: $akta-red;
+      background-color: darken($akta-red, 5%);
     }
     &.secondsource {
-      background-color: $secondsource-green;
+      background-color: darken($secondsource-green, 5%);
     }
     .tile-content {
       @include vertically-align();
@@ -212,6 +226,7 @@
         text-transform: uppercase;
         background-color:transparent;
         text-decoration: none;
+        transition: all 0.3s ease;
         &:hover {
           text-decoration: none;
           background-color: white;

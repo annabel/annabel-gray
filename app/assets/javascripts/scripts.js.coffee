@@ -48,9 +48,9 @@ animateScroll = (targetPos) ->
       scrollTop: targetPos
     , time
 
-addStuff = ->
-  if window.mobileAndTabletcheck()
-    alert 'mobile'
+#addStuff = ->
+#  if window.mobileAndTabletcheck()
+#    alert 'mobile'
 
 displayWorkInfo = ->
   $('.work-info-button').on 'mousedown touchstart', ->

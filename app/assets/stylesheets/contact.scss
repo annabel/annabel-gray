@@ -63,9 +63,9 @@
         font-size: 18px;
         text-transform: uppercase;
         letter-spacing: 2px;
+        transition: background-color 0.2s ease-in-out;
         &:hover {
           background-color: $brand-primary-grey;
-          transition: all 0.2s ease-in-out;
         }
       }
       .error-message {
@@ -102,11 +102,11 @@
     text-align: justify;
     text-transform: uppercase;
   }
-	.contact-content {
+  .contact-content {
     @media (min-width: $screen-sm-min) {
       @include vertically-align();
     }
-	  .contact-icon {
+    .contact-icon {
       max-height: 40px;
       width: auto;
       margin: 0 10px;
@@ -120,7 +120,7 @@
         background-color: $seafoam-green;
         padding: 6px;
       }
-	  }
+    }
     .icon-row {
       @include make-row();
       height: 140px;
@@ -152,5 +152,5 @@
         }
       }
     }
-	}
+  }
 }

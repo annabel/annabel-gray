@@ -36,13 +36,13 @@
       .icon-container
         = link_to "https://www.linkedin.com/in/annabeldunstone", target: "_blank" do
           %img.contact-icon.linkedin{:src => asset_path("linkedin.png")}
-        %a{href: 'https://github.com/annabeldunstone'}
+        = link_to "https://github.com/annabeldunstone", target: "_blank" do
           %img.contact-icon.github{:src => asset_path("github.png")}
         -#%a{href: 'https://bitbucket.org/annabeldunstone'}
         -#  %img.contact-icon.bitbucket{:src => asset_path("bitbucket.png")}
-        %a{href: 'https://instagram.com/annabeldunstone/'}
+        = link_to "https://instagram.com/annabeldunstone/", target: "_blank" do
           %img.contact-icon.instagram{:src => asset_path("instagram.png")}
         = link_to "https://dribbble.com/annabeldunstone", target: "_blank" do
           %img.contact-icon.dribbble{:src => asset_path("dribbble.png")}
-        %a{href: 'http://www.goodreads.com/user/show/29443888-annabel-dunstone'}
+        = link_to "http://www.goodreads.com/user/show/29443888-annabel-dunstone", target: "_blank" do
           %img.contact-icon.goodreads{:src => asset_path("goodreads.png")}

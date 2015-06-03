@@ -20,10 +20,10 @@
     }
   }
   .quick-facts {
-    font-size: 16px;
+    font-size: 18px;
     margin-top: 30px;
     background-color: $seafoam-green;
-    color: rgba(0, 0, 0, 0.61);
+    color: white;
     font-weight: 400;
     padding: 50px 0 10px 0;
     position: relative;
@@ -65,13 +65,12 @@
         font-family: 'Roboto Slab', serif;
       }
       .item {
+        letter-spacing: 0.4px;
         a {
           color: rgba(0, 0, 0, 0.43);
-          font-weight: normal;
+          font-weight: 400;
           color: white;
-          &:hover {
-            text-decoration: underline;
-          }
+          border-bottom: 3px solid white;
         }
       }
     }
