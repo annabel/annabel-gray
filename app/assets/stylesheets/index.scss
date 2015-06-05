@@ -1,9 +1,9 @@
 #index {
   position: relative;
   z-index: 1;
-  -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.37);
-  -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.37);
-  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.37);
+  -moz-box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
+  -webkit-box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
+  box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
   background-color: $akta-red;
   .index-row {
     @include make-row();
@@ -92,9 +92,9 @@
   font-size: 34px;
   padding-top: 28px;
   padding-left: 4px;
-  -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.37);
-  -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.37);
-  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.37);
+  -moz-box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
+  -webkit-box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
+  box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
   transition: font-size 0.5s ease, background-color 0.5s ease;
   &:hover,
   &:active, {

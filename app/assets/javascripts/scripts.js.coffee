@@ -54,9 +54,8 @@ animateScroll = (targetPos) ->
 
 displayWorkInfo = ->
   $('.work-info-button').on 'mousedown touchstart', ->
-    $(this).parent().parent().addClass('active-button')
-  $('.glyphicon-remove').on 'mousedown touchstart', ->
-    $(this).parent().parent().removeClass('active-button')
+    $(this).parent().parent().toggleClass('active-button')
+
 
 #window.mobileAndTabletcheck = ->
 #  check = false
