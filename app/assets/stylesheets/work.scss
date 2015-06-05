@@ -116,6 +116,13 @@
     &:active {
       background-color: darken($seafoam-green, 3%);
     }
+    &:hover {
+      cursor: pointer;
+    }
+    &:focus {
+      border: none;
+      outline: none;
+    }
     .glyphicon-plus {
       position: absolute;
       font-size: 22px;
