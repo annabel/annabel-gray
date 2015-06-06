@@ -6,13 +6,18 @@ body {
 }
 
 .content {
-	position: relative;
+  position: relative;
 }
 
 .row {
   img {
     width: 100%;
   }
+}
+
+.section-title {
+  background-color: white;
+  color: $text-grey;
 }
 
 .section-title {

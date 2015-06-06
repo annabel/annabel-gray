@@ -1,10 +1,5 @@
 .work-block {
-	color: $text-color;
   position: relative;
-  .section-title {
-    color: $text-grey;
-    background-color: white;
-  }
   .triangle {
     @include triangle(93px);
     z-index: 11;
@@ -20,7 +15,7 @@
         position: relative;
         overflow: hidden;
         text-align: center;
-        border: 4px solid white;
+        //border: 4px solid white;
         @media (max-width: $screen-md-min) {
           border: none;
         }
@@ -50,31 +45,31 @@
         }
         &.flo {
           background-color: $flo-pink;
-          border-left: none;
-          border-top: none;
+          //border-left: none;
+          //border-top: none;
         }
         &.masterlock {
           background-color: $masterlock-purple;
-          border-top: none;
-          border-right: none;
+          //border-top: none;
+          //border-right: none;
         }
         &.mycareer {
           background-color: $mycareer-blue;
-          border-left: none;
+          //border-left: none;
         }
         &.scorpioncf {
           background-color: $crossfit-gold;
-          border-right: none;
+          //border-right: none;
         }
         &.akta {
           background-color: $akta-red;
-          border-left: none;
-          border-bottom: none;
+          //border-left: none;
+          //border-bottom: none;
         }
         &.secondsource {
           background-color: $secondsource-green;
-          border-right: none;
-          border-bottom: none;
+          //border-right: none;
+          //border-bottom: none;
         }
       }
     }
@@ -90,7 +85,6 @@
 //Work Overlays
 .hover-tile-outer {
   padding: 0;
-  cursor: pointer;
   .hover-tile-container {
     height: 400px;
     overflow: hidden;
@@ -100,24 +94,27 @@
   }
   .work-info-button {
     position: absolute;
-    left: 20px;
+    left: 18px;
     bottom: 20px;
     height: 56px;
     width: 56px;
     border-radius: 50%;
     z-index: 11;
     text-align: center;
-    background-color: $seafoam-green;
-    transition: background-color 0.3s ease-in-out;
+    background-color: $brand-primary-grey-light;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     -moz-box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
     -webkit-box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
     box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
     &:hover,
     &:active {
-      background-color: darken($seafoam-green, 3%);
+      background-color: darken($brand-primary-grey-light, 3%);
     }
     &:hover {
       cursor: pointer;
+      -moz-box-shadow: 0 0 4px rgba(0,0,0,.14),0 6px 10px rgba(0,0,0,.28);
+      -webkit-box-shadow: 0 0 4px rgba(0,0,0,.14),0 6px 10px rgba(0,0,0,.28);
+      box-shadow: 0 0 4px rgba(0,0,0,.14),0 6px 10px rgba(0,0,0,.28);
     }
     &:focus {
       border: none;
@@ -133,7 +130,7 @@
       right: 0;
       margin: auto;
       height: 24px;
-      width: 24px;
+      width: 20px;
       -moz-transition: all 0.3s ease-in-out;
       -webkit-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out;
@@ -143,12 +140,32 @@
     &.active-button {
       .work-info-button {
         background-color: white;
+        &:hover {
+          background-color: darken(white, 2%);
+        }
       }
       .glyphicon-plus {
-        -moz-transform:rotate(134deg);
-        -webkit-transform:rotate(134deg);
-        transform:rotate(134deg);
-        color: $seafoam-green;
+        -moz-transform:rotate(224deg);
+        -webkit-transform:rotate(224deg);
+        transform:rotate(224deg);
+        &.flo {
+          color: $flo-pink;
+        }
+        &.masterlock {
+          color: $masterlock-purple;
+        }
+        &.mycareer {
+          color: $mycareer-blue;
+        }
+        &.scorpioncf {
+          color: $crossfit-gold;
+        }
+        &.akta {
+          color: $akta-red;
+        }
+        &.secondsource {
+          color: $secondsource-green;
+        }
       }
       .hover-tile-hidden {
         height: 400px;
@@ -235,7 +252,6 @@
         &:hover {
           text-decoration: none;
           background-color: white;
-          transition: all 0.5s ease;
           &.flo-btn {
             color: $flo-pink;
           }

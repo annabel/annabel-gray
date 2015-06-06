@@ -1,10 +1,6 @@
 .contact-block {
   background-color: $seafoam-green;
   position: relative;
-  .section-title {
-    background-color: white;
-    color: $seafoam-green;
-  }
   .triangle {
     @include triangle(93px);
   }
@@ -97,7 +93,7 @@
     right: 0;
   }
   .text-background {
-    color: #464955;
+    color: $brand-primary-grey-light;
     position: absolute;
     text-align: justify;
     text-transform: uppercase;
@@ -107,18 +103,16 @@
       @include vertically-align();
     }
     .contact-icon {
-      max-height: 40px;
+      max-height: 50px;
       width: auto;
-      margin: 0 10px;
+      margin: 0 5px;
+      border-radius: 3px;
       background-color: transparent;
-      padding: 0;
-      transition: all 0.2s ease-in-out;
-      border-radius: 2px;
+      padding: 8px;
+      transition: background-color 0.2s ease-in-out;
       &:hover,
       &:active {
-        transition: all 0.5s ease-in-out;
         background-color: $seafoam-green;
-        padding: 6px;
       }
     }
     .icon-row {

@@ -1,10 +1,6 @@
 .photography-block {
   background-color: #E0E0E0;
   position: relative;
-  .section-title {
-    background-color: white;
-    color: $text-grey;
-  }
   .triangle {
     @include triangle(93px);
   }
