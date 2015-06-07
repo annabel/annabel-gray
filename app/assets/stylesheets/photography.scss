@@ -1,5 +1,5 @@
 .photography-block {
-  background-color: #E0E0E0;
+  background-color: $brand-primary-grey-light;
   position: relative;
   .triangle {
     @include triangle(93px);
@@ -15,7 +15,7 @@
     }
     .paragraph {
       @include make-sm-column(24);
-      color: $text-grey;
+      color: white;
       margin-top: 30px;
       font-size: 19px;
       font-weight: 100;

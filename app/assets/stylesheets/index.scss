@@ -4,7 +4,7 @@
   -moz-box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
   -webkit-box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
   box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
-  background-color: $akta-red;
+  background-color: $brand-primary-grey-light;
   .index-row {
     @include make-row();
     @include vertically-align();
@@ -87,7 +87,7 @@
   height:80px;
   border-radius: 50%;
   z-index:1;
-  background-color: $seafoam-green;
+  background-color: $akta-red;
   color: white;
   font-size: 34px;
   padding-top: 28px;
@@ -95,10 +95,10 @@
   -moz-box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
   -webkit-box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
   box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
-  transition: font-size 0.5s ease, background-color 0.5s ease;
+  transition: background-color 0.1s ease;
   &:hover,
   &:active, {
-    background-color: darken($seafoam-green, 3%);
+    background-color: darken($akta-red, 3%);
   }
   @media (max-width: 535px) {
     width: 60px;
