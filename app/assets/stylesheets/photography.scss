@@ -5,7 +5,7 @@
     @include triangle(93px);
   }
   .photography-container {
-    padding: 30px 15px;
+    padding: 60px 15px;
   }
   .photography-row {
     @include make-row();
@@ -16,9 +16,13 @@
     .paragraph {
       @include make-sm-column(24);
       color: white;
-      margin-top: 30px;
+      margin-top: 60px;
       font-size: 19px;
       font-weight: 100;
+      .photography-link {
+        font-style: italic;
+        border-bottom: 2px solid white;
+      }
     }
   }
 }
