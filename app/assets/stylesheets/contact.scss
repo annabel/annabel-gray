@@ -19,6 +19,13 @@
         padding: 60px 0;
         font-size: 20px;
         font-family: 'Roboto Slab', serif;
+        .icon-container {
+          text-align: center;
+          .letter-icon {
+            height: 60px;
+            width: auto;
+          }
+        }
         @media (max-width: $screen-md-min) {
           padding-bottom: 0;
         }
