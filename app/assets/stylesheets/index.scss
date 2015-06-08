@@ -44,6 +44,9 @@
         vertical-align: text-top;
         margin-top: -15px;
         margin-left: 25px;
+        .last {
+          margin-left: -6px;
+        }
       }
       @media (max-width: $screen-md-min) {
         @include make-md-column(10);
@@ -53,14 +56,14 @@
         text-align: center;
         margin-left: 0;
       }
-      //@media(min-width: 993px) and (max-width: $screen-md-max) {
-      //  //margin-top: -31px;
-      //}
       .name {
         font-size: 60px;
         line-height: .9;
         letter-spacing: 3px;
         font-weight: 100;
+        &.last {
+          margin-left: 0;
+        }
         @media (max-width: 535px) {
           font-size: 30px;
         }
