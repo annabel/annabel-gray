@@ -5,13 +5,13 @@
 .contact-form-container
   .container
     .contact-form-row
-      .section-column
+      .section-column.wow.slideInLeft
         .contact-text-container
           .contact-paragraph
             While I'm not actively seeking new projects at the moment, I'm always open to hearing new and
             exciting ideas. If you have a project in mind, or just want to say hello, please feel free
             to drop me a line! I feel like this isn't long enough. Let's get an icon or something in here!
-      .section-column
+      .section-column.wow.slideInRight
         = form_for :message, url: send_message_path, method: :post, html: { role: 'form', id: 'contact-form' } do |f|
           = f.label(:human, "If you're a human, leave this unchecked", style: "display: none")
           = f.check_box(:human, style: "display: none")
