@@ -5,7 +5,7 @@
 .contact-form-container
   .container
     .contact-form-row
-      .section-column.wow.slideInLeft
+      .section-column
         .contact-text-container
           .contact-paragraph
             While I'm not actively seeking new projects at the moment, I'm always open to hearing new and
@@ -36,6 +36,7 @@
     .icon-row
       .email-container
         = mail_to "annabel.dunstone@gmail.com"
+        .underline
       .icon-container
         = link_to "https://www.linkedin.com/in/annabeldunstone", target: "_blank" do
           %img.contact-icon.linkedin{:src => asset_path("linkedin.png")}

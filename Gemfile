@@ -16,5 +16,6 @@ gem "respond-rails", "~> 1.0"
 
 gem 'rails_12factor', group: :production
 
+gem 'cloudinary'
 gem 'newrelic_rpm'
 gem 'figaro'
