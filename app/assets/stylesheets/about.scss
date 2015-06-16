@@ -12,6 +12,9 @@
         color: $text-grey;
         font-size: 19px;
         font-weight: 100;
+        .stress {
+          font-weight: normal;
+        }
       }
     }
   }

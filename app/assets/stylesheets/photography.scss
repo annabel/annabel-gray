@@ -19,10 +19,17 @@
       margin-top: 60px;
       font-size: 19px;
       font-weight: 100;
+      @media (max-width: $screen-sm-min) {
+        margin-top: 40px;
+      }
       a {
         color: white;
         font-style: italic;
-        border-bottom: 2px solid white;
+        border-bottom: 2px solid $seafoam-green;
+        &:hover {
+          border-color: $akta-red;
+          transition: border-color 0.2s ease;
+        }
       }
     }
   }
