@@ -19,5 +19,4 @@ idea/workspace.xml
 
 # Ignore application configuration
 /config/application.yml
-.ruby-version
 .idea/workspace.xml
