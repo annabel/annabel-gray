@@ -1,11 +1,11 @@
 .photography-block {
-  background-color: $brand-primary-grey-light;
+  background-color: $brand-primary-grey-lighter;
   position: relative;
-  .triangle {
-    @include triangle(93px);
+  .section-title {
+    background-color: $brand-primary-grey-lighter;
   }
   .photography-container {
-    padding: 60px 15px;
+    padding: 10px 15px 60px 15px;
   }
   .photography-row {
     @include make-row();
@@ -15,7 +15,7 @@
     }
     .paragraph {
       @include make-sm-column(24);
-      color: white;
+      color: $text-grey;
       margin-top: 60px;
       font-size: 19px;
       font-weight: 100;
@@ -23,7 +23,7 @@
         margin-top: 40px;
       }
       a {
-        color: white;
+        color: $seafoam-green;
         font-style: italic;
         border-bottom: 2px solid $seafoam-green;
         &:hover {

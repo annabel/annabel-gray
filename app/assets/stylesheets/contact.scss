@@ -7,7 +7,7 @@
 }
 
 .contact-form-container {
-  background-color :$seafoam-green;
+  background-color: $brand-primary-grey;
   .contact-form-row {
     @include make-row();
     .section-column {
@@ -32,15 +32,6 @@
         padding: 60px 0;
         font-size: 22px;
         font-family: 'Roboto Slab', serif;
-        //.icon-container {
-        //  text-align: center;
-        //  margin-bottom: 10px;
-        //  padding-bottom: 10px;
-        //  .icon {
-        //    height: 70px;
-        //    width: auto;
-        //  }
-        //}
         @media (max-width: $screen-md-min) {
           padding-bottom: 0;
           font-size: 20px;
@@ -69,7 +60,7 @@
       textarea {
         max-width: 100%;
         font-size: 16px;
-        border-radius: 2px;
+        border-radius: 1px;
         border: 1px solid white;
         -webkit-box-shadow: none;
         -moz-box-shadow: none;
@@ -78,7 +69,7 @@
       }
       .contact-form-submit {
         width: 100%;
-        background-color: $brand-primary-grey-light;
+        background-color: lighten($brand-primary-grey-light, 10%);
         color: rgba(255, 255, 255, 0.81);
         border: none;
         font-size: 18px;
@@ -86,7 +77,7 @@
         letter-spacing: 2px;
         transition: background-color 0.2s ease-in-out;
         &:hover {
-          background-color: $brand-primary-grey;
+          background-color: $brand-primary-grey-light;
         }
       }
       .error-message {
@@ -131,7 +122,7 @@
       max-height: 50px;
       width: auto;
       margin: 0 5px;
-      border-radius: 3px;
+      border-radius: 2  px;
       background-color: transparent;
       padding: 8px;
       transition: background-color 0.2s ease-in-out;

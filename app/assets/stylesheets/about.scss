@@ -1,9 +1,9 @@
 .about-block {
-  padding-top: 40px;
+  padding-top: 30px;
   position: relative;
   background-color: white;
   .bio-snippet-container {
-    padding-bottom: 45px;
+    padding-bottom: 5px;
     .bio-snippet-row {
       @include make-row();
       position: relative;
@@ -21,8 +21,8 @@
   .quick-facts {
     font-size: 16px;
     margin-top: 30px;
-    background-color: $seafoam-green;
-    color: white;
+    background-color: white;
+    color: $text-grey;
     font-weight: 400;
     padding: 40px 0 20px 0;
     position: relative;
@@ -39,13 +39,17 @@
       margin-right: auto;
       margin-bottom: 30px;
       padding: 0 1%;
-      width: 49%;
+      width: 23%;
       display: inline-block;
       vertical-align: top;
-      @media (min-width: $screen-md-min) {
-        width: 23%;
+      @media (max-width: $screen-sm-min) {
+        width: 49%;
       }
       .icon-container {
+        background-color: $grey-color;
+        padding: 20px;
+        border-radius: 50%;
+        display: inline-block;
         .bio-icon {
           height: 65px;
           &.photo {
@@ -59,18 +63,11 @@
         font-weight: 400;
         font-size: 20px;
         margin-bottom: 5px;
-        color: ghostwhite;
+        color: $text-grey;
         text-transform: uppercase;
-        font-family: 'Roboto Slab', serif;
       }
       .item {
-        letter-spacing: 0.4px;
-        a {
-          color: rgba(0, 0, 0, 0.43);
-          font-weight: 400;
-          color: white;
-          border-bottom: 3px solid white;
-        }
+        font-weight: 100;
       }
     }
   }
