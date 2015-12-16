@@ -1,13 +1,10 @@
 .contact-block {
   background-color: $seafoam-green;
   position: relative;
-  .triangle {
-    @include triangle(93px);
-  }
 }
 
 .contact-form-container {
-  background-color: $brand-primary-grey;
+  background-color: white;
   .contact-form-row {
     @include make-row();
     .section-column {
@@ -28,18 +25,18 @@
     }
     .contact-text-container {
       .contact-paragraph {
-        color: white;
-        padding: 60px 0;
-        font-size: 22px;
-        font-family: 'Roboto Slab', serif;
+        color: $text-grey;
+        padding: 30px 0 40px 0;
+        font-size: 20px;
+        font-weight: 100;
         @media (max-width: $screen-md-min) {
           padding-bottom: 0;
-          font-size: 20px;
+          padding-top: 10px;
         }
       }
     }
     form {
-      padding: 60px 0;
+      padding: 30px 0 40px 0;
       @media (max-width: $screen-md-min) {
         padding-top: 30px;
       }
@@ -53,7 +50,7 @@
         min-height: 42px;
       }
       textarea {
-        height: 110px;
+        height: 90px;
         resize: none;
       }
       input,
@@ -61,36 +58,39 @@
         max-width: 100%;
         font-size: 16px;
         border-radius: 1px;
-        border: 1px solid white;
+        border: none;
+        border-bottom: 2px solid $seafoam-green;
         -webkit-box-shadow: none;
         -moz-box-shadow: none;
         box-shadow: none;
         -webkit-appearance: none;
       }
+      .button-container {
+        text-align: right;
+      }
       .contact-form-submit {
-        width: 100%;
-        background-color: lighten($brand-primary-grey-light, 10%);
-        color: rgba(255, 255, 255, 0.81);
+        text-align: right;
+        background-color: white;
+        color: $brand-primary-grey-light;
         border: none;
         font-size: 18px;
         text-transform: uppercase;
         letter-spacing: 2px;
-        transition: background-color 0.2s ease-in-out;
-        &:hover {
-          background-color: $brand-primary-grey-light;
+        transition: border 0.2s ease-in-out;
+        &:focus {
+          outline: none;
         }
       }
       .error-message {
-        color: white;
+        color: $akta-red;
         font-style: italic;
       }
       .message-success {
         margin-top: 12px;
         margin-bottom: -12px;
-        color: white;
+        color: $akta-red;
         font-size: 20px;
         text-align: center;
-
       }
     }
   }
@@ -122,10 +122,10 @@
       max-height: 50px;
       width: auto;
       margin: 0 5px;
-      border-radius: 2  px;
+      border-radius: 2px;
       background-color: transparent;
       padding: 8px;
-      transition: background-color 0.2s ease-in-out;
+      transition: background-color 0.1s ease-in-out;
       &:hover,
       &:active {
         background-color: $seafoam-green;

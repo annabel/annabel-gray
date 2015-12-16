@@ -5,7 +5,7 @@
     background-color: $brand-primary-grey-lighter;
   }
   .photography-container {
-    padding: 10px 15px 60px 15px;
+    padding: 10px 15px 40px 15px;
   }
   .photography-row {
     @include make-row();
@@ -17,7 +17,7 @@
       @include make-sm-column(24);
       color: $text-grey;
       margin-top: 60px;
-      font-size: 19px;
+      font-size: 18px;
       font-weight: 100;
       @media (max-width: $screen-sm-min) {
         margin-top: 40px;
