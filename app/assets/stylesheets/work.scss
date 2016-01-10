@@ -45,31 +45,21 @@
         }
         &.flo {
           background-color: $flo-pink;
-          //border-left: none;
-          //border-top: none;
         }
         &.masterlock {
           background-color: $masterlock-purple;
-          //border-top: none;
-          //border-right: none;
         }
         &.mycareer {
           background-color: $mycareer-blue;
-          //border-left: none;
         }
         &.scorpioncf {
           background-color: $crossfit-gold;
-          //border-right: none;
         }
         &.akta {
           background-color: $akta-red;
-          //border-left: none;
-          //border-bottom: none;
         }
-        &.secondsource {
-          background-color: $secondsource-green;
-          //border-right: none;
-          //border-bottom: none;
+        &.mercaris {
+          background-color: $mercaris-green;
         }
       }
     }
@@ -163,8 +153,8 @@
         &.akta {
           color: $akta-red;
         }
-        &.secondsource {
-          color: $secondsource-green;
+        &.mercaris {
+          color: $mercaris-green;
         }
       }
       .hover-tile-hidden {
@@ -228,8 +218,8 @@
     &.akta {
       background-color: darken($akta-red, 5%);
     }
-    &.secondsource {
-      background-color: darken($secondsource-green, 5%);
+    &.mercaris {
+      background-color: darken($mercaris-green, 5%);
     }
     .tile-content {
       @include vertically-align();
@@ -267,8 +257,8 @@
           &.akta-btn {
             color: $akta-red;
           }
-          &.secondsource-btn {
-            color: $secondsource-green;
+          &.mercaris-btn {
+            color: $mercaris-green;
           }
         }
       }

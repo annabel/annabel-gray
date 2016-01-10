@@ -19,4 +19,4 @@ idea/workspace.xml
 
 # Ignore application configuration
 /config/application.yml
-.idea/workspace.xml
+.idea/
