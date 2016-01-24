@@ -16,4 +16,7 @@ class PagesController < ApplicationController
       :name, :email, :content, :human
     )
   end
+
+  def form
+  end
 end
