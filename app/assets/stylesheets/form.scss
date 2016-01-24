@@ -1,0 +1,81 @@
+// Variables
+$scout-blue:  #3197d6;
+$tablet-size: "only screen and (max-width : 740px)";
+
+
+
+// Styles
+.scout-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  text-align: center;
+  font-size: 20px;
+
+  .help-scout-form {
+    max-width: 710px;
+    position: relative;
+    margin: 300px auto auto;
+
+    @media #{$tablet-size} {
+      max-width: 300px;
+      text-align: center;
+      margin-top: 150px;
+    }
+
+    &__label {
+      font-weight: 200;
+      padding-right: 20px;
+      color: $dark-grey;
+
+      @media #{$tablet-size} {
+        display: block;
+        text-align: left;
+        margin-bottom: 20px;
+      }
+    }
+
+    &__input {
+      -webkit-appearance: none;
+      border: none;
+      border-bottom: 3px solid $scout-blue;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      padding-bottom: 3px;
+      background-color: transparent;
+      color: $scout-blue;
+      min-width: 300px;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      border-radius: 0;
+
+      &:focus {
+        outline: none;
+      }
+
+      &::-webkit-input-placeholder {
+        font-weight: 200;
+      }
+
+      &::-moz-placeholder {
+        font-weight: 200;
+      }
+    }
+
+    &__check {
+      height: 45px;
+      position: absolute;
+      right: 0;
+      top: 55px;
+      display: none;
+
+      @media #{$tablet-size} {
+        top: 140px;
+      }
+    }
+  }
+}
