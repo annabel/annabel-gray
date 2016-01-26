@@ -44,14 +44,12 @@
         .underline
       .icon-container
         = link_to "https://www.linkedin.com/in/annabeldunstone", target: "_blank" do
-          %img.contact-icon.linkedin{:src => asset_path("linkedin.png")}
+          = image_tag('linkedin.png', class: 'contact-icon linkedin')
         = link_to "https://github.com/annabeldunstone", target: "_blank" do
-          %img.contact-icon.github{:src => asset_path("github.png")}
-        -#%a{href: 'https://bitbucket.org/annabeldunstone'}
-        -#  %img.contact-icon.bitbucket{:src => asset_path("bitbucket.png")}
+          = image_tag('github.png', class: 'contact-icon github')
         = link_to "https://instagram.com/annabeldunstone/", target: "_blank" do
-          %img.contact-icon.instagram{:src => asset_path("instagram.png")}
+          = image_tag('instagram.png', class: 'contact-icon instagram')
         = link_to "https://dribbble.com/annabeldunstone", target: "_blank" do
-          %img.contact-icon.dribbble{:src => asset_path("dribbble.png")}
+          = image_tag('dribbble.png', class: 'contact-icon dribbble')
         = link_to "http://www.goodreads.com/user/show/29443888-annabel-dunstone", target: "_blank" do
-          %img.contact-icon.goodreads{:src => asset_path("goodreads.png")}
+          = image_tag('goodreads.png', class: 'contact-icon goodreads')

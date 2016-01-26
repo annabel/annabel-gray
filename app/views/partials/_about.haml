@@ -12,25 +12,25 @@
     .fact-list
       .bio-item
         .icon-container
-          %img.bio-icon{:src => asset_path('location.svg')}
+          = image_tag('location.svg', class: 'bio-icon')
         .description
           .header Places
           .item I've lived in many places- Scotland, England, Texas, and of course, Chicago!
       .bio-item
         .icon-container
-          %img.bio-icon{:src => asset_path('code-white.svg')}
+          = image_tag('code-white.svg', class: 'bio-icon')
         .description
           .header Work
           .item I'm a software engineer at Slalom Consulting in Chicago, IL.
       .bio-item
         .icon-container
-          %img.bio-icon.photo{:src => asset_path('photography.svg')}
+          = image_tag('photography.svg', class: 'bio-icon photo')
         .description
           .header College
           .item I graduated from St. Edward's University in Austin, TX with a degree in photography.
       .bio-item
         .icon-container
-          %img.bio-icon{:src => asset_path('books.svg')}
+          = image_tag('books.svg', class: 'bio-icon')
         .description
           .header Hobbies
           .item I love reading, playing video games, and, when the opportunity presents itself, snowboarding.
