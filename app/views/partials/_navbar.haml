@@ -1,17 +1,17 @@
-.navbird
-  %button.navbar-toggle
-    .menu Menu
-
+.navbird-desktop
   %ul.nav.navbar-content
-    %li
-      %a{href: '#index'} Home
-    %li
-      %a{href: '#about'} About
-    %li
-      %a{href: '#work'} Recent Work
-    %li
-      %a{href: 'photography'} Photography
-    %li
-      %a{href: 'contact'} Blog
-    %li
-      %a{href: '#contact'} Contact
+    .content-left
+      %li
+        %a.home{href: '/'}
+          = image_tag "apple-touch-icon-180x180.png", class: "icon" 
+          Annabel Dunstone
+
+    .content-right
+      %li
+        %a.work{href: '/work'} Work
+      %li
+        %a.photography{href: '/photography'} Photography
+      %li
+        %a.blog{href: '/blog'} Blog
+      %li
+        %a.contact{href: '/contact'} Contact

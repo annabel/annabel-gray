@@ -29,6 +29,7 @@
     </head>
     <body>
         <div class="content">
+            <%= render "partials/navbar" %>
             <%= yield %>
         </div>
         <% if Rails.env.production? %>

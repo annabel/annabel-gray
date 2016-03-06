@@ -1,76 +1,74 @@
 @import "bootstrap-overrides";
 
-@mixin ease {
-  -webkit-transition: 400ms ease;
-  -moz-transition: 400ms ease;
-  -o-transition: 400ms ease;
-  transition: 400ms ease;
-  -webkit-transition-property: -webkit-transform, left, right; /* Add left/right for Android < 4.4. */
-  -webkit-backface-visibility: hidden; /* Prevents flickering. This is non essential, and you may remove it if your having problems with fixed background images in Chrome. */
-}
-
-.navbird {
-  @include ease;
-  right: -270px;
-  position: fixed;
+.navbird-desktop {
+  position: relative;
   top: 0;
-  height: 100%;
+  width: 100%;
   z-index: 15;
-  width: 270px;
-  &.open {
-    @include ease;
-    right: 0;
-  }
-  .navbar-toggle {
-    position: relative;
-    @include ease;
-    top: 0;
-    right: 269px;
-    border: none;
-    background-color: #9C2327;
-    margin-top: 40px;
-    padding: 40px 15px 40px 15px;
-    margin-right: 0;
-    border-radius: 0;
-    &.open {
-      @include ease;
-     right: 269px;
-    }
-    &:hover,
-    &:active,
-    &:focus {
-      background-color: #9C2327;
-    }
-    .menu {
-      -webkit-transform: rotate(-90deg);
-      -moz-transform: rotate(-90deg);
-      -ms-transform: rotate(-90deg);
-      -o-transform: rotate(-90deg);
-      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-    }
-  }
+
   .navbar-content {
     margin-top: 0;
-    padding: 50px 40px;
-    position: relative;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #9C2327;
+    padding: 0 40px;
+    background-color: white;
     text-align: left;
-    height: 100%;
+
+    .content-left {
+      float: left;
+    }
+
+    .content-right {
+      float: right;
+
+      li {
+        padding: 27px 20px;
+      }
+    }
+
     li {
-      padding: 10px 0;
+      padding: 20px;
+      display: inline-block;
+
       a {
-        color: white;
+        color: gray;
+        font-size: 16px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+
+        &.home {
+          color: $brand-teal;
+        }
+
+        &.work {
+          color: $brand-orange;
+        }
+
+        &.photography {
+          color: $brand-purple;
+        }
+
+        &.blog {
+          color: $brand-green;
+        }
+
+        &.contact {
+          color: $brand-pink;
+        }
+        
         &:hover {
           background-color: transparent;
         }
       }
+
+      .icon {
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 3px;
+      }
     }
   }
+
+  @media (max-width: 860px) {
+    display: none;
+  }
 }
-
-
-
-

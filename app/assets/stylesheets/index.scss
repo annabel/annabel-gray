@@ -1,111 +1,103 @@
 #index {
   position: relative;
   z-index: 1;
-  background-color: $brand-primary-grey-lighter;
+  background-color: $white;
+  text-align: center;
+
   .index-row {
-    @include make-row();
-    @include vertically-align();
-    text-align: center;
-    height: 390px;
-    position: relative;
+    padding-top: 14em;
+
     @media (max-width: $screen-md-min) {
-      height: auto;
+      padding-top: 7em;
     }
+
+    @media (max-width: 535px) {
+      padding-top: 2em;
+    }
+
     .computer {
-      display: inline-block;
+      width: 45%;
+      float: left;
+      text-align: right;
+
       img {
         width: auto;
-        @media (max-width: $screen-md-min) {
-          @include make-md-column(14);
-          height: 350px;
-        }
+
         @media (min-width: $screen-md-min) {
-          height: 395px;
+          height: 295px;
         }
+
+        @media (max-width: $screen-md-min) {
+          height: 250px;
+        }
+
         @media (max-width: 535px) {
           height: 160px;
         }
       }
+
       @media (max-width: $screen-md-min) {
         text-align: center;
-        width: auto;
-        display: block;
+        width: 100%;
+        float: none;
       }
     }
+
     .text {
       color: $text-grey-lighter;
-      display: inline-block;
-      position: relative;
+      width: 55%;
+      float: left;
       text-align: left;
-      @media (min-width: $screen-md-min) {
-        vertical-align: text-top;
-        margin-top: -15px;
-        margin-left: 25px;
-        .last {
-          margin-left: -6px;
-        }
+      font-family: 'Open Sans', serif;
+      font-weight: 800;
+      line-height: 1.0;
+      font-size: 33px;
+      text-transform: uppercase;
+
+      @media (max-width: 535px) {
+        font-size: 22px;
       }
+
+      @media (min-width: $screen-md-min) {
+        padding-left: 20px;
+      }
+
       @media (max-width: $screen-md-min) {
-        @include make-md-column(10);
-        display: block;
-        vertical-align: text-top;
         margin-top: 20px;
         text-align: center;
-        margin-left: 0;
+        padding-left: 0;
+        width: 100%;
+        float: none;
       }
+
       .name {
-        font-size: 60px;
-        line-height: .9;
-        letter-spacing: 3px;
-        font-weight: 100;
-        &.last {
-          margin-left: 0;
-        }
-        @media (max-width: 535px) {
-          font-size: 30px;
-        }
+        color: $black;
+        margin-bottom: 15px;
       }
+
       .title {
-        font-size: 30px;
-        letter-spacing: 5px;
-        margin-top: 20px;
-        font-family: 'Roboto Slab', serif;
-        font-weight: 100;
-        @media (max-width: 535px) {
-          font-size: 18px;
+
+        &.developer {
+          color: $brand-blue;
+        }
+
+        &.designer {
+          color: $brand-orange;
+        }
+
+        &.photographer {
+          color: $brand-purple;
+        }
+
+        &.baker {
+          color: $brand-green;
+        }
+
+        &.reader {
+          color: $brand-pink;
         }
       }
     }
-  }
-}
-.down-button {
-  @include horizontally-align();
-  position: absolute;
-  text-align: center;
-  top: 0px;
-  width:80px;
-  height:80px;
-  border-radius: 50%;
-  z-index:1;
-  background-color: $akta-red;
-  color: white;
-  font-size: 34px;
-  padding-top: 26px;
-  padding-left: 4px;
-  -moz-box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
-  -webkit-box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
-  box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
-  transition: background-color 0.1s ease;
-  &:hover,
-  &:active, {
-    background-color: darken($akta-red, 3%);
-  }
-  @media (max-width: 535px) {
-    width: 60px;
-    height: 60px;
-    font-size: 25px;
-    padding-top: 20px;
-    top: 15px;
   }
 }
 
@@ -116,21 +108,5 @@ a {
   &:focus {
     color: white;
     text-decoration: none;
-  }
-}
-
-@media (min-width:100px) and (max-width:600px) {
-  #index {
-    .image-wrapper {
-      margin-top: -28px;
-      .bird-picture {
-        height: 300px;
-      }
-    }
-  }
-  .headline {
-    .site-title {
-      font-size: 22px;
-    }
   }
 }

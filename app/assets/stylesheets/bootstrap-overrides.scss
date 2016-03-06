@@ -1,34 +1,43 @@
-$grid-float-breakpoint: 9999px;
+$grid-float-breakpoint:                      9999px;
+     
+$brand-primary-red:                          #9C2327;
+$brand-primary-grey:                         #363740;
+$brand-primary-green:                        #239C69;
+$brand-primary-grey-light:                   #464955;
+$brand-primary-grey-lighter:                 #EAEAEA;
 
-$brand-primary-red: #9C2327;
-$brand-primary-grey: #363740;
-$brand-primary-green: #239C69;
-$brand-primary-grey-light: #464955;
-$brand-primary-grey-lighter: #EAEAEA;
+$brand-teal:                                 #2AC9B5;
+$brand-purple:                               #A9378D;  
+$brand-green:                                #8EC76F;
+$brand-blue:                                 #18BAD0;
+$brand-orange:                               #F38D36;
+$brand-pink:                                 #E0537D;
+     
+$orangey-red:                                #f6615b;
+$about-bg:                                   #FFFFFF;
+$seafoam-green:                              #28C1AE;
+     
+$grid-columns:                                    24;
+     
+$text-grey:                                  #666666;
+$text-grey-lighter:                          #777777;
+$black:                                      #545454;
+     
+$white:                                      #FFFFFF;
+$off-white:                                  #F0F0F0;
+$grey-color:                                 #ADADAD;
+$dark-grey:                          rgb(44, 44, 44);
+$light-grey:                                 #4D4D4D;
+     
+$flo-pink:                                   #ff7665;
+$akta-red:                                   #FF5269;
+$mercaris-green:                             #5CDEB5;
+$crossfit-gold:                              #FFD563;
+$pinguino-purple:                            #350843;
+$masterlock-purple:                          #8870BE;
+$mycareer-blue:                              #62DADC;
 
-$orangey-red: #f6615b;
-$about-bg: #FFFFFF;
-$seafoam-green: #28C1AE;
-
-$grid-columns: 24;
-
-$text-grey: #666666;
-$text-grey-lighter: #777777;
-
-$off-white: #F0F0F0;
-$grey-color: #ADADAD;
-$dark-grey: rgb(44, 44, 44);
-$light-grey: #4D4D4D;
-
-$flo-pink :#ff7665;
-$akta-red: #FF5269;
-$mercaris-green: #5CDEB5;
-$crossfit-gold: #FFD563;
-$pinguino-purple: #350843;
-$masterlock-purple: #8870BE;
-$mycareer-blue: #62DADC;
-
-$light-blue-transparent: rgba(98, 184, 190, 0.9);
-$teal-transparent: rgba(0, 100, 94, 0.93);
-$orangey-red-transparent: rgba(246, 97, 91, 0.89);
-$black-transparent: rgba(65, 65, 65, 0.87);
+$light-blue-transparent:     rgba(98, 184, 190, 0.9);
+$teal-transparent:            rgba(0, 100, 94, 0.93);
+$orangey-red-transparent:    rgba(246, 97, 91, 0.89);
+$black-transparent:           rgba(65, 65, 65, 0.87);
