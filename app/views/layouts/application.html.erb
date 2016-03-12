@@ -31,6 +31,8 @@
         <div class="content">
             <%= render "partials/navbar" %>
             <%= yield %>
+            <%= render "partials/footer" unless current_page?(root_url) %>
+
         </div>
         <% if Rails.env.production? %>
         <script>

@@ -1,36 +1,13 @@
-.photography-block {
-  background-color: $brand-primary-grey-lighter;
-  position: relative;
-  .section-title {
-    background-color: $brand-primary-grey-lighter;
-  }
-  .photography-container {
-    padding: 10px 15px 40px 15px;
-  }
-  .photography-row {
-    @include make-row();
-    .photography-images {
-      width: 100%;
-      height: auto;
-    }
-    .paragraph {
-      @include make-sm-column(24);
-      color: $text-grey;
-      margin-top: 60px;
-      font-size: 18px;
-      font-weight: 100;
-      @media (max-width: $screen-sm-min) {
-        margin-top: 40px;
-      }
-      a {
-        color: $seafoam-green;
-        font-style: italic;
-        border-bottom: 2px solid $seafoam-green;
-        &:hover {
-          border-color: $akta-red;
-          transition: border-color 0.2s ease;
-        }
-      }
-    }
-  }
+.headline-photography {
+  background-color: darken($brand-purple, 10%);
 }
+
+.photography-row {
+  @include make-row();
+
+  .photography-images {
+    width: 100%;
+    height: auto;
+  } 
+}
+

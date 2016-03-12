@@ -5,23 +5,7 @@
 .contact-form-row {
   @include make-row();
 
-  .text-column {
-    @include make-md-column(24);
-    color: $white;
-    padding-top: 40px;
-    padding-bottom: 40px;
-
-    .header {
-      font-weight: 700;
-      font-size: 30px;
-      text-transform: uppercase;
-    }
-
-    .text {
-      font-size: 20px;
-      font-weight: 300;
-    }
-  }
+ 
 
   .inputs-column {
     @include make-md-column(12);
@@ -98,104 +82,6 @@
       color: $brand-pink;
       font-size: 20px;
       text-align: center;
-    }
-  }
-}
-
-
-.footer-block {
-  position: relative;
-  text-align: justify !important;
-  background-color: $brand-primary-grey;
-  height: 200px;
-  overflow: hidden;
-
-  .text-fill {
-    height: 300px;
-    position: absolute;
-    left: 0;
-    right: 0;
-  }
-
-  .text-background {
-    color: $brand-primary-grey-light;
-    position: absolute;
-    text-align: justify;
-    text-transform: uppercase;
-  }
-
-  .contact-content {
-    @media (min-width: $screen-sm-min) {
-      @include vertically-align();
-    }
-
-    .contact-icon {
-      max-height: 50px;
-      width: auto;
-      margin: 0 5px;
-      border-radius: 2px;
-      background-color: transparent;
-      padding: 8px;
-      transition: background-color 0.1s ease-in-out;
-
-      &:hover,
-      &:active {
-        background-color: $seafoam-green;
-      }
-    }
-
-    .icon-row {
-      @include make-row();
-      height: 140px;
-
-      .email-container {
-        @include make-sm-column(10);
-        @include vertically-align();
-        padding: 15px;
-        text-align: left;
-
-        @media (max-width: $screen-sm-min) {
-          text-align: center;
-        }
-
-        a {
-          color: white;
-          letter-spacing: 1px;
-
-          &:hover,
-          &:active {
-            &:after {
-              width: 226px;
-            }
-          }
-
-          &:after {
-            content: '';
-            display: block;
-            margin: auto;
-            height: 4px;
-            width: 0;
-            background: $seafoam-green;
-            transition: width 0.5s ease;
-            margin-left: -1px;
-
-            @media (max-width: $screen-sm-min) {
-              margin: auto;
-            }
-          }
-        }
-      }
-
-      .icon-container {
-        @include make-sm-column(14);
-        @include vertically-align();
-        padding: 15px;
-        text-align: right;
-
-        @media (max-width: $screen-sm-min) {
-          text-align: center;
-        }
-      }
     }
   }
 }
