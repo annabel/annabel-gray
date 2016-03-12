@@ -1,6 +1,4 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800);
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,700);
-
 
 html,
 body,
@@ -36,6 +34,17 @@ body {
   font-weight: 400;
   margin-bottom: 0 !important;
   margin-top: 0!important;
+}
+
+input,
+.form-control,
+.btn {
+  &:focus,
+  &:active,
+  &:active:focus {
+    box-shadow: none;
+    outline: none;
+  }
 }
 
 @mixin vertically-align() {

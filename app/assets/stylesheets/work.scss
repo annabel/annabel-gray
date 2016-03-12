@@ -1,87 +1,112 @@
 .work-block {
   position: relative;
+  background-color: $brand-primary-grey-lighter;
+  padding: 40px 0;
+
+  @media (max-width:472px) {
+    padding: 30px 0;
+  }
+
+  @media (max-width: 767px) {
+    padding: 30px 20px;
+  }
+
   .triangle {
     @include triangle(93px);
     z-index: 11;
   }
-  .container-fluid {
-    .work-row {
-      @include make-row();
-      background-color: white;
-      .project-column {
-        @include make-md-column(12);
-        padding: 0;
-        height: 400px;
-        position: relative;
-        overflow: hidden;
-        text-align: center;
-        //border: 4px solid white;
-        @media (max-width: $screen-md-min) {
-          border: none;
+
+  .work-row {
+    @include make-row();
+    background-color: white;
+
+    .project-column {
+      @include make-md-column(12);
+      padding: 0;
+      height: 400px;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+
+      @media (max-width: $screen-md-min) {
+        border: none;
+      }
+
+      img {
+        @include vertically-align();
+        height: 70%;
+        width: auto;
+
+        &.masterlock-image {
+          width: 90%;
+          height: auto;
+          top: 0;
+          transform: translateY(0);
+          ms-transform: translateY(0);
+          -webkit-transform: translateY(0);
         }
+      }
+
+      @media (max-width:472px) {
+        height: 350px;
+
         img {
-          @include vertically-align();
-          height: 80%;
-          width: auto;
+          height: 60%;
+
           &.masterlock-image {
-            width: 90%;
-            height: auto;
-            top: 0;
-            transform: translateY(0);
-            ms-transform: translateY(0);
-            -webkit-transform: translateY(0);
+            @include vertically-align();
+            height: 75%;
+            width: auto;
           }
         }
-        @media (max-width:472px) {
-          height: 350px;
-          img {
-            height: 70%;
-            &.masterlock-image {
-              @include vertically-align();
-              height: 85%;
-              width: auto;
-            }
-          }
-        }
-        &.flo {
-          background-color: $flo-pink;
-        }
-        &.masterlock {
-          background-color: $masterlock-purple;
-        }
-        &.mycareer {
-          background-color: $mycareer-blue;
-        }
-        &.scorpioncf {
-          background-color: $crossfit-gold;
-        }
-        &.akta {
-          background-color: $akta-red;
-        }
-        &.mercaris {
-          background-color: $mercaris-green;
-        }
+      }
+
+      &.flo {
+        background-color: $flo-pink;
+      }
+
+      &.masterlock {
+        background-color: $masterlock-purple;
+      }
+
+      &.mycareer {
+        background-color: $mycareer-blue;
+      }
+
+      &.scorpioncf {
+        background-color: $crossfit-gold;
+      }
+
+      &.akta {
+        background-color: $akta-red;
+      }
+
+      &.mercaris {
+        background-color: $mercaris-green;
       }
     }
   }
 }
+
 @media (min-width:700px) and (max-width:992px) {
   .project-column {
     padding: 0 65px;
   }
 }
 
-
 //Work Overlays
 .hover-tile-outer {
   padding: 0;
+
   .hover-tile-container {
     height: 400px;
     overflow: hidden;
+
     @media (max-width:472px) {
       height: 350px;
     }
   }
+
   .work-info-button {
     position: absolute;
     left: 18px;
@@ -96,20 +121,24 @@
     -moz-box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
     -webkit-box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
     box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
+
     &:hover,
     &:active {
       background-color: darken($brand-primary-grey-light, 3%);
     }
+
     &:hover {
       cursor: pointer;
       -moz-box-shadow: 0 0 4px rgba(0,0,0,.14),0 6px 10px rgba(0,0,0,.28);
       -webkit-box-shadow: 0 0 4px rgba(0,0,0,.14),0 6px 10px rgba(0,0,0,.28);
       box-shadow: 0 0 4px rgba(0,0,0,.14),0 6px 10px rgba(0,0,0,.28);
     }
+
     &:focus {
       border: none;
       outline: none;
     }
+
     .glyphicon-plus {
       position: absolute;
       font-size: 22px;
@@ -126,48 +155,60 @@
       transition: all 0.3s ease-in-out;
     }
   }
+
   .hover-tile-container {
     &.active-button {
       .work-info-button {
         background-color: white;
+
         &:hover {
           background-color: darken(white, 2%);
         }
       }
+
       .glyphicon-plus {
         -moz-transform:rotate(224deg);
         -webkit-transform:rotate(224deg);
         transform:rotate(224deg);
+
         &.flo {
           color: $flo-pink;
         }
+
         &.masterlock {
           color: $masterlock-purple;
         }
+
         &.mycareer {
           color: $mycareer-blue;
         }
+
         &.scorpioncf {
           color: $crossfit-gold;
         }
+
         &.akta {
           color: $akta-red;
         }
+
         &.mercaris {
           color: $mercaris-green;
         }
       }
+
       .hover-tile-hidden {
         height: 400px;
         -ms-transform: translate(0, -100%);
         -webkit-transform: translate(0, -100%);
         transform: translate(0, -100%);
+
         @media (max-width: 472px) {
           height: 350px;
         }
       }
     }
   }
+
   @media (min-width: $screen-md-min) {
     .hover-tile-container {
       &.active {
@@ -176,6 +217,7 @@
           -ms-transform: translate(0, -100%);
           -webkit-transform: translate(0, -100%);
           transform: translate(0, -100%);
+
           @media (max-width: 472px) {
             height: 350px;
           }
@@ -183,11 +225,13 @@
       }
     }
   }
+
   @media (max-width: $screen-md-min) {
     .work-info-button {
       display: block;
     }
   }
+
   .hover-tile {
     transition: all, 0.3s ease-in-out;
     padding: 0;
@@ -197,30 +241,39 @@
     overflow: hidden;
     position: relative;
   }
+
   .hover-tile-hidden {
     z-index:10;
     position: relative;
+
     @media (max-width: $screen-md-min) {
       border: none;
     }
+
     &.flo {
       background-color: darken($flo-pink, 5%);
     }
+
     &.masterlock {
       background-color: darken($masterlock-purple, 5%);
     }
+
     &.mycareer {
       background-color: darken($mycareer-blue, 5%);
     }
+
     &.scorpioncf {
       background-color: darken($crossfit-gold, 5%);
     }
+
     &.akta {
       background-color: darken($akta-red, 5%);
     }
+
     &.mercaris {
       background-color: darken($mercaris-green, 5%);
     }
+
     .tile-content {
       @include vertically-align();
       .work-name {
@@ -228,6 +281,7 @@
         margin-bottom: 30px;
         font-weight: 100;
       }
+
       a {
         border: 4px solid white;
         border-radius: 1px;
@@ -239,39 +293,49 @@
         background-color:transparent;
         text-decoration: none;
         transition: all 0.3s ease;
+
         &:hover {
           text-decoration: none;
           background-color: white;
+
           &.flo-btn {
             color: $flo-pink;
           }
+
           &.masterlock-btn {
             color: $masterlock-purple;
           }
+
           &.mycareer-btn {
             color: $mycareer-blue;
           }
+
           &.scorpioncf-btn {
             color: $crossfit-gold;
           }
+
           &.akta-btn {
             color: $akta-red;
           }
+
           &.mercaris-btn {
             color: $mercaris-green;
           }
         }
       }
+
       .coming-soon {
         font-size:15px;
         font-weight: 100;
         font-style: italic;
       }
+
       .header {
         margin-top: 30px;
         font-size: 18px;
         font-weight: 100;
       }
+
       .skills {
         font-size: 16px;
         font-family: 'Roboto Slab', serif;

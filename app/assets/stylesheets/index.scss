@@ -24,7 +24,7 @@
         width: auto;
 
         @media (min-width: $screen-md-min) {
-          height: 295px;
+          height: 265px;
         }
 
         @media (max-width: $screen-md-min) {
@@ -53,6 +53,9 @@
       line-height: 1.0;
       font-size: 33px;
       text-transform: uppercase;
+      // background: -webkit-gradient(linear, left top, left bottom, from($brand-teal), to($brand-purple));
+      //   -webkit-background-clip: text;
+      //   -webkit-text-fill-color: transparent;
 
       @media (max-width: 535px) {
         font-size: 22px;
@@ -71,18 +74,18 @@
       }
 
       .name {
-        color: $black;
+        color: $light-grey;
         margin-bottom: 15px;
       }
 
       .title {
 
         &.developer {
-          color: $brand-blue;
+          color: $brand-pink;
         }
 
         &.designer {
-          color: $brand-orange;
+          color: $brand-green;
         }
 
         &.photographer {
@@ -90,11 +93,11 @@
         }
 
         &.baker {
-          color: $brand-green;
+          color: $brand-blue;
         }
 
         &.reader {
-          color: $brand-pink;
+          color: $brand-orange;
         }
       }
     }
