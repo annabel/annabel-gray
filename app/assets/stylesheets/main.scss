@@ -4,7 +4,7 @@ html,
 body,
 .content {
   height: 100%;
-  width: 100%;
+  width: 100%;  
 }
 
 body {
@@ -25,17 +25,17 @@ body {
   .text-column {
     @include make-md-column(24);
     color: $white;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 
     .header {
       font-weight: 700;
-      font-size: 30px;
+      font-size: 26px;
       text-transform: uppercase;
     }
 
     .text {
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 300;
     }
   }

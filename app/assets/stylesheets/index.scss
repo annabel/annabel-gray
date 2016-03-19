@@ -74,14 +74,14 @@
       }
 
       .name {
-        color: $light-grey;
+        color: $brand-teal;
         margin-bottom: 15px;
       }
 
       .title {
 
         &.developer {
-          color: $brand-pink;
+          color: $brand-purple;
         }
 
         &.designer {
@@ -89,7 +89,7 @@
         }
 
         &.photographer {
-          color: $brand-purple;
+          color: $brand-pink;
         }
 
         &.baker {
