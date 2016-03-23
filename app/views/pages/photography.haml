@@ -6,7 +6,11 @@
         .text
           Coming from a photography background is one of my greatest strengths as a developer, as it gives me greater insight into how to collaborate with designers. Additionally, my knowledge of basic design principles as well as prototyping and editing tools allows me to create the UI for my own projects. Photography has taken a back seat to coding over the last couple years, but I hope to get back into it soon.
 
-.container.photography-container
-  .photography-row
-    = image_tag "photography-images.png", class: "photography-images"
+.container
+  #lightgallery
+    .gallery-title Structure
+    %a{:href => "http://fillmurray.com/200/300"}
+      %img{:src => "http://fillmurray.com/200/300"}/
+    %a{:href => "http://fillmurray.com/200/300"}
+      %img{:src => "http://fillmurray.com/200/300"}/
   

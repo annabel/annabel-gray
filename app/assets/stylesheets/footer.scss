@@ -3,6 +3,8 @@
   text-align: justify !important;
   background-color: $brand-primary-grey;
   height: 120px;
+  margin-top: -120px;
+  clear: both;
   overflow: hidden;
 
   .text-fill {

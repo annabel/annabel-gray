@@ -13,4 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap-sprockets
+//= require lightgallery
+//= require lg-fullscreen
 //= require_tree .
