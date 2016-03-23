@@ -84,6 +84,22 @@
       &.mercaris {
         background-color: $mercaris-green;
       }
+
+      &.lucid {
+        background-color: $lucid-blue;
+      }
+
+      &.hcsc {
+        background-color: $hcsc-orange;
+      }
+
+      &.dotrebate {
+        background-color: $dotrebate-purple;
+      }
+
+      &.johndeere {
+        background-color: $johndeere-green;
+      }
     }
   }
 }
@@ -194,6 +210,22 @@
         &.mercaris {
           color: $mercaris-green;
         }
+
+        &.lucid {
+          color: $lucid-blue;
+        }
+
+        &.hcsc {
+          color: $hcsc-orange;
+        }
+
+        &.dotrebate {
+          color: $dotrebate-purple;
+        }
+
+        &.johndeere {
+          color: $johndeere-green;
+        }
       }
 
       .hover-tile-hidden {
@@ -274,6 +306,22 @@
       background-color: darken($mercaris-green, 5%);
     }
 
+    &.lucid {
+      background-color: darken($lucid-blue, 5%);
+    }
+
+    &.hcsc {
+      background-color: darken($hcsc-orange, 5%);
+    }
+
+    &.dotrebate {
+      background-color: darken($dotrebate-purple, 5%);
+    }
+
+    &.johndeere {
+      background-color: darken($johndeere-green, 5%);
+    }
+
     .tile-content {
       @include vertically-align();
       .work-name {
@@ -320,6 +368,10 @@
 
           &.mercaris-btn {
             color: $mercaris-green;
+          }
+
+          &.hcsc-btn {
+            color: $hcsc-orange;
           }
         }
       }

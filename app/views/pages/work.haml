@@ -2,6 +2,53 @@
 
   .container
     .work-row
+      .project-column.dotrebate.hover-tile-outer
+        .hover-tile-container
+          .hover-tile.hover-tile-visible
+            = image_tag "dotrebate.png"
+            %button.btn.work-info-button
+              .glyphicon.glyphicon-plus.dotrebate
+          .hover-tile.hover-tile-hidden.dotrebate
+            .tile-content
+              .work-name Dot Rebate
+              .coming-soon Redesign still in progress- stay tuned!
+              .header Skills strengthened:
+              .skills Sketch, Photoshop, Rails
+      .project-column.johndeere.hover-tile-outer
+        .hover-tile-container
+          .hover-tile.hover-tile-visible
+            = image_tag "mercaris.png"
+            %button.btn.work-info-button
+              .glyphicon.glyphicon-plus.johndeere
+          .hover-tile.hover-tile-hidden.johndeere
+            .tile-content
+              .work-name John Deere
+              .coming-soon Redesign still in progress! Stay tuned!
+              .header Skills strengthened:
+              .skills Selenium, JUnit, Cucumber
+      .project-column.hcsc.hover-tile-outer
+        .hover-tile-container
+          .hover-tile.hover-tile-visible
+            = image_tag "hcsc.png"
+            %button.btn.work-info-button
+              .glyphicon.glyphicon-plus.hcsc
+          .hover-tile.hover-tile-hidden.hcsc
+            .tile-content
+              .work-name HSCS Assistance Finder
+              = link_to "View App", "http://assistancefinder.hcsc.net/assistance-finder/tx/en#/", class: "btn hcsc-btn", target: "_blank"
+              .header Skills strengthened:
+              .skills Spring, Java, Angular.js
+      .project-column.lucid.hover-tile-outer
+        .hover-tile-container
+          .hover-tile.hover-tile-visible
+            = image_tag "lucid.png"
+            %button.btn.work-info-button
+              .glyphicon.glyphicon-plus.lucid
+          .hover-tile.hover-tile-hidden.lucid
+            .tile-content
+              .work-name Lucid
+              .header Skills strengthened:
+              .skills Angular.js, SASS
       .project-column.mercaris.hover-tile-outer
         .hover-tile-container
           .hover-tile.hover-tile-visible
