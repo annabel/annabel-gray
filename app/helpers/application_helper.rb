@@ -14,4 +14,16 @@ def meta_keywords(page_keywords)
   end
 end
 
+def nav_link(link_text, link_path, class_name=nil)
+  if current_page?(link_path)
+    content_tag(:li, class: "active #{class_name}") do
+      link_to(link_text, link_path)
+    end
+  else
+    content_tag(:li, class: class_name) do
+      link_to(link_text, link_path)
+    end
+  end
+end
+
 end

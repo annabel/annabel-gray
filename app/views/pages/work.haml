@@ -17,13 +17,12 @@
       .project-column.johndeere.hover-tile-outer
         .hover-tile-container
           .hover-tile.hover-tile-visible
-            = image_tag "mercaris.png"
+            = image_tag "johndeere.png"
             %button.btn.work-info-button
               .glyphicon.glyphicon-plus.johndeere
           .hover-tile.hover-tile-hidden.johndeere
             .tile-content
               .work-name John Deere
-              .coming-soon Redesign still in progress! Stay tuned!
               .header Skills strengthened:
               .skills Selenium, JUnit, Cucumber
       .project-column.hcsc.hover-tile-outer
@@ -34,7 +33,7 @@
               .glyphicon.glyphicon-plus.hcsc
           .hover-tile.hover-tile-hidden.hcsc
             .tile-content
-              .work-name HSCS Assistance Finder
+              .work-name HCSC Assistance Finder
               = link_to "View App", "http://assistancefinder.hcsc.net/assistance-finder/tx/en#/", class: "btn hcsc-btn", target: "_blank"
               .header Skills strengthened:
               .skills Spring, Java, Angular.js
@@ -82,9 +81,9 @@
           .hover-tile.hover-tile-hidden.masterlock
             .tile-content
               .work-name Masterlock e-locks
-              .coming-soon Coming Soon to the Google Play Store!
+              = link_to "View in Google Play", "https://play.google.com/store/apps/details?id=com.masterlock.ble.app", class: "btn masterlock-btn", target: "_blank"
               .header Skills strengthened:
-              .skills Java, Android Studio, Android libraries
+              .skills Java, Android, Android libraries
       .project-column.mycareer.hover-tile-outer
         .hover-tile-container
           .hover-tile.hover-tile-visible
