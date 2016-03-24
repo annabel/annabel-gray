@@ -2,12 +2,22 @@
   background-color: $brand-pink;
 }
 
-.photography-row {
-  @include make-row();
+#lightgallery {
+  margin: 40px 0;
+  text-align: center;
 
-  .photography-images {
-    width: 100%;
-    height: auto;
-  } 
+  .image-thumbnail {
+    height: 150px;
+    width: auto;
+    margin: 4px 2px;
+
+    @media (max-width: 520px) {
+      height: 100px;
+    }
+  }
+
 }
 
+.lg-image {
+  max-height: 650px !important;
+}

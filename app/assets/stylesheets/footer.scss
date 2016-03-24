@@ -27,13 +27,18 @@
     }
 
     .contact-icon {
-      max-height: 43px;
+      max-height: 42px;
       width: auto;
       margin: 0 4px;
       border-radius: 2px;
       background-color: transparent;
       padding: 7px;
       transition: background-color 0.1s ease-in-out;
+
+      @media (max-width: $screen-sm-min) {
+        max-height: 40px;
+        padding: 5px;
+      }
 
       &:hover,
       &:active {
@@ -91,7 +96,7 @@
 
         @media (max-width: $screen-sm-min) {
           text-align: center;
-          padding-top: 0;
+          padding: 0 0 15px 0;
         }
       }
 
