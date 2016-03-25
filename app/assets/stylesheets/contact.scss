@@ -40,7 +40,7 @@
       font-size: 16px;
       border-radius: 1px;
       border: none;
-      border-bottom: 2px solid $brand-primary-grey-light;
+      border-bottom: 2px solid $brand-grey-light;
       -webkit-box-shadow: none;
       -moz-box-shadow: none;
       box-shadow: none;
@@ -58,7 +58,7 @@
 
     .contact-form-submit {
       text-align: right;
-      background-color: white;
+      background-color: $white;
       color: $brand-blue;
       border: none;
       font-size: 18px;

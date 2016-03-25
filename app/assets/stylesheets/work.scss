@@ -1,6 +1,6 @@
 .work-block {
   position: relative;
-  background-color: $brand-primary-grey-lighter;
+  background-color: $brand-grey-lighter;
   padding: 40px 0;
 
   @media (max-width:472px) {
@@ -9,11 +9,6 @@
 
   @media (max-width: 767px) {
     padding: 30px 20px;
-  }
-
-  .triangle {
-    @include triangle(93px);
-    z-index: 11;
   }
 
   .work-row {
@@ -132,22 +127,16 @@
     border-radius: 50%;
     z-index: 11;
     text-align: center;
-    background-color: $brand-primary-grey-light;
-    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    -moz-box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
-    -webkit-box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
-    box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
+    background-color: $brand-grey-light;
+    transition: background-color 0.1s ease-in-out;
 
     &:hover,
     &:active {
-      background-color: darken($brand-primary-grey-light, 3%);
+      background-color: darken($brand-grey-light, 8%);
     }
 
     &:hover {
       cursor: pointer;
-      -moz-box-shadow: 0 0 4px rgba(0,0,0,.14),0 6px 10px rgba(0,0,0,.28);
-      -webkit-box-shadow: 0 0 4px rgba(0,0,0,.14),0 6px 10px rgba(0,0,0,.28);
-      box-shadow: 0 0 4px rgba(0,0,0,.14),0 6px 10px rgba(0,0,0,.28);
     }
 
     &:focus {
@@ -327,7 +316,7 @@
       .work-name {
         font-size: 32px;
         margin-bottom: 30px;
-        font-weight: 100;
+        font-weight: 700;
       }
 
       a {
@@ -390,7 +379,6 @@
 
       .skills {
         font-size: 16px;
-        font-family: 'Roboto Slab', serif;
         font-style: italic;
         padding: 5px 25px;
       }

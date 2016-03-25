@@ -8,7 +8,7 @@
   &.active {
 
     a {
-      border-bottom: 3px dotted $link-primary;
+      border-bottom: 3px dotted lighten($link-primary, 30%);
     }
   }
 }

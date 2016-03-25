@@ -67,20 +67,3 @@ input,
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-
-@mixin horizontally-align() {
-  left: 50%;
-  -ms-transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-@mixin triangle($top) {
-  top: $top;
-  @include horizontally-align();
-  position: absolute;
-  z-index: 1;
-  border-left: 35px solid transparent;
-  border-right: 35px solid transparent;
-  border-top: 25px solid white;
-}

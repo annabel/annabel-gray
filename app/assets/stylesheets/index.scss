@@ -44,7 +44,6 @@
     }
 
     .text {
-      color: $text-grey-lighter;
       width: 55%;
       float: left;
       text-align: left;
@@ -109,7 +108,7 @@ a {
   &:active,
   &:visited,
   &:focus {
-    color: white;
+    color: $white;
     text-decoration: none;
   }
 }
