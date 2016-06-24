@@ -1,0 +1,107 @@
+.footer-block {
+  position: relative;
+  text-align: justify !important;
+  background-color: $brand-grey;
+  height: 120px;
+  margin-top: -120px;
+  clear: both;
+  overflow: hidden;
+
+  .text-fill {
+    height: 174px;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+
+  .text-background {
+    color: $brand-grey-light;
+    position: absolute;
+    text-align: justify;
+    text-transform: uppercase;
+  }
+
+  .contact-content {
+    @media (min-width: $screen-sm-min) {
+      @include vertically-align();
+    }
+
+    .contact-icon {
+      max-height: 42px;
+      width: auto;
+      margin: 0 4px;
+      border-radius: 2px;
+      background-color: transparent;
+      padding: 7px;
+
+      @media (max-width: $screen-sm-min) {
+        max-height: 40px;
+        padding: 5px;
+      }
+
+      &:hover,
+      &:active {
+        background-color: $brand-teal;
+      }
+    }
+
+    .icon-row {
+      @include make-row();
+      height: 140px;
+
+      .email-container {
+        @include make-sm-column(10);
+        @include vertically-align();
+        padding: 15px;
+        text-align: left;
+
+        @media (max-width: $screen-sm-min) {
+          text-align: center;
+        }
+
+        a {
+          color: $white;
+          letter-spacing: 1px;
+
+          &:hover,
+          &:active {
+            &:after {
+              width: 226px;
+            }
+          }
+
+          &:after {
+            content: '';
+            display: block;
+            margin: auto;
+            height: 4px;
+            width: 0;
+            background: $brand-teal;
+            transition: width 0.5s ease;
+            margin-left: -1px;
+
+            @media (max-width: $screen-sm-min) {
+              margin: auto;
+            }
+          }
+        }
+      }
+
+      .icon-container {
+        @include make-sm-column(14);
+        @include vertically-align();
+        padding: 15px;
+        text-align: right;
+
+        @media (max-width: $screen-sm-min) {
+          text-align: center;
+          padding: 0 0 15px 0;
+        }
+      }
+
+      @media (max-width: $screen-sm-min) {
+        height: 68px;
+      }
+    }
+  }
+}

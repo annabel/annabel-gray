@@ -1,0 +1,16 @@
+#index
+  .index-row
+    .computer
+      = image_tag "me.png"
+    .text
+      .name Annabel Dunstone
+      = link_to "https://gitlab.com/u/annabeldunstone", target: "_blank" do
+        .title.developer Front End Engineer
+      = link_to work_path do
+        .title.designer Occasional Designer
+      = link_to photography_path do
+        .title.photographer Amateur Photographer
+      / = link_to blog_path do
+      .title.baker Experimental Baker
+      = link_to "http://www.goodreads.com/user/show/29443888-annabel-dunstone", target: "_blank" do
+        .title.reader Avid Reader

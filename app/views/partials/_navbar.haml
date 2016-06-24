@@ -1,0 +1,13 @@
+.container.navbird-desktop
+  %ul.nav.navbar-content
+    .content-left
+      %li
+        %a.home{href: '/'}
+          = image_tag "apple-touch-icon-180x180.png", class: "icon"
+          %span.home-text Annabel Dunstone
+
+    .content-right
+      = nav_link('Work', work_path, 'work')
+      = nav_link('Blog', blog_path, 'blog')
+      = nav_link('Photography', photography_path, 'photography')
+      = nav_link('Contact', contact_path, 'contact')

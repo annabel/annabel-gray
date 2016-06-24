@@ -1,0 +1,114 @@
+#index {
+  position: relative;
+  z-index: 1;
+  background-color: $white;
+  text-align: center;
+
+  .index-row {
+    padding-top: 14em;
+
+    @media (max-width: $screen-md-min) {
+      padding-top: 7em;
+    }
+
+    @media (max-width: 535px) {
+      padding-top: 2em;
+    }
+
+    .computer {
+      width: 45%;
+      float: left;
+      text-align: right;
+
+      img {
+        width: auto;
+
+        @media (min-width: $screen-md-min) {
+          height: 265px;
+        }
+
+        @media (max-width: $screen-md-min) {
+          height: 250px;
+        }
+
+        @media (max-width: 535px) {
+          height: 160px;
+        }
+      }
+
+      @media (max-width: $screen-md-min) {
+        text-align: center;
+        width: 100%;
+        float: none;
+      }
+    }
+
+    .text {
+      width: 55%;
+      float: left;
+      text-align: left;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 800;
+      line-height: 1.0;
+      font-size: 33px;
+      text-transform: uppercase;
+      // background: -webkit-gradient(linear, left top, left bottom, from($brand-teal), to($brand-purple));
+      //   -webkit-background-clip: text;
+      //   -webkit-text-fill-color: transparent;
+
+      @media (max-width: 535px) {
+        font-size: 22px;
+      }
+
+      @media (min-width: $screen-md-min) {
+        padding-left: 20px;
+      }
+
+      @media (max-width: $screen-md-min) {
+        margin-top: 20px;
+        text-align: center;
+        padding-left: 0;
+        width: 100%;
+        float: none;
+      }
+
+      .name {
+        color: $brand-teal;
+        margin-bottom: 15px;
+      }
+
+      .title {
+
+        &.developer {
+          color: $brand-purple;
+        }
+
+        &.designer {
+          color: $brand-green;
+        }
+
+        &.photographer {
+          color: $brand-pink;
+        }
+
+        &.baker {
+          color: $brand-blue;
+        }
+
+        &.reader {
+          color: $brand-orange;
+        }
+      }
+    }
+  }
+}
+
+a {
+  &:hover,
+  &:active,
+  &:visited,
+  &:focus {
+    color: $white;
+    text-decoration: none;
+  }
+}
