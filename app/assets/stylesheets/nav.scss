@@ -77,7 +77,7 @@
           @include nav-links($brand-blue);
         }
       }
-    }    
+    }
 
     a {
       font-size: 16px;
@@ -92,16 +92,16 @@
         color: $brand-teal;
 
         .home-text {
-          @media (max-width: 860px) {
+          @media (max-width: $screen-sm-max) {
             display: none;
           }
         }
       }
-      
+
       &:hover {
         background-color: transparent;
       }
     }
-    
+
   }
 }

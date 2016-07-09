@@ -1,17 +1,17 @@
 module ApplicationHelper
 
 def full_title(page_title)
-  base_title = "Annabel Dunstone"
+  base_title = "Annabel"
   page_title.empty? ? base_title : "#{base_title} | #{page_title}"
 end
 
 def meta_description(description)
-  base_description = "Annabel Dunstone"
+  base_description = "Annabel Dunstone Gray"
   description.empty? ? base_description : description
 end
 
 def meta_keywords(page_keywords)
-  base_keywords = "Annabel, Dunstone, Annabel Dunstone, web, code, programming, web developer"
+  base_keywords = "Annabel, Dunstone, Gray, Annabel Dunstone Gray, web, code, programming, web developer"
   if page_keywords.empty?
     base_keywords
   else
