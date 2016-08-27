@@ -1,9 +1,5 @@
-class Message
-  include ActiveModel::Validations
-  include ActiveModel::Conversion
-  extend ActiveModel::Naming
-
-  attr_accessor :name, :email, :content, :human
+class Message < ActiveRecord::Base
+  attr_accessor :human
 
   validates :name, presence: { message: "Name can't be blank" }
   validates :content, presence: { message: "Message can't be blank" }
@@ -12,16 +8,6 @@ class Message
             format: { with: /\A[-a-z0-9_+\.]+\@([-a-z0-9]+\.)+[a-z0-9]{2,4}\Z/i,
                       message: "Invalid email", if: 'email.present?' }
   validate :human_check
-
-  def initialize(attributes = {})
-    attributes.each do |name, value|
-      send("#{name}=", value)
-    end
-  end
-
-  def persisted?
-    false
-  end
 
   private
 
