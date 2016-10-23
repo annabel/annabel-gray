@@ -14,7 +14,7 @@ handleFormSubmit = ->
   $('#contact-form').on 'submit', (e) ->
     e.preventDefault()
     $('.error-message, .message-success').empty()
-    
+
     request = $.ajax
       type: 'POST'
       url: '/send_message'
@@ -30,7 +30,7 @@ handleFormSubmit = ->
       $('.name-error').text(errors.name[0]).show() if errors.name
       $('.email-error').text(errors.email[0]).show() if errors.email
       $('.content-error').text(errors.content[0]).show() if errors.content
-      
+
 
 setIndex = ->
   $index = $('#index')
@@ -49,7 +49,7 @@ animateScroll = (targetPos) ->
     , time
 
 displayWorkInfo = ->
-  $('.work-info-button').on 'mousedown touchstart', ->
+  $('.work-info-button').on 'click', ->
     $(this).parent().parent().toggleClass('active-button')
 
 
