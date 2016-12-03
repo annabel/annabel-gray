@@ -1,18 +1,5 @@
 @import "bootstrap-overrides";
 
-@mixin nav-links($link-primary) {
-  a {
-    color: $link-primary;
-  }
-
-  &.active {
-
-    a {
-      border-bottom: 3px solid lighten($link-primary, 30%);
-    }
-  }
-}
-
 .navbird-desktop {
   position: relative;
   top: 0;
@@ -54,34 +41,35 @@
       li {
         padding: 29px 20px;
 
+        a {
+          padding-bottom: 5px;
+          font-weight: 500;
+          background: -webkit-gradient(linear, left top, left bottom, from($brand-blue), to($brand-teal));
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
+        &.active {
+          a {
+            border-bottom: 2px solid lighten($brand-teal, 20%);
+          }
+        }
+
         @media (max-width: 860px) {
           padding: 29px 10px;
         }
 
-        &.work {
-          @include nav-links($brand-purple);
-        }
-
         &.photography {
-          @include nav-links($brand-pink);
-            @media (max-width: 510px) {
-              display: none;
-            }
-        }
-
-        &.blog {
-          @include nav-links($brand-green);
-        }
-
-        &.contact {
-          @include nav-links($brand-blue);
+          @media (max-width: 510px) {
+            display: none;
+          }
         }
       }
     }
 
     a {
       font-size: 16px;
-      font-family: "Open Sans", sans-serif;
+      font-family: $sans-serif-font;
       font-weight: 700;
       text-transform: uppercase;
       @media (max-width: 510px) {

@@ -1,7 +1,6 @@
 .work-block {
   position: relative;
-  background-color: $brand-grey-lighter;
-  padding: 40px 0;
+  padding-bottom: 40px;
 
   @media (max-width:472px) {
     padding: 30px 0;
@@ -18,7 +17,6 @@
     .project-column {
       @include make-md-column(12);
       padding: 0;
-      height: 400px;
       position: relative;
       overflow: hidden;
       text-align: center;
@@ -43,7 +41,7 @@
       }
 
       @media (max-width:472px) {
-        height: 350px;
+        height: 340px;
 
         img {
           height: 60%;
@@ -54,46 +52,6 @@
             width: auto;
           }
         }
-      }
-
-      &.flo {
-        background-color: $flo-pink;
-      }
-
-      &.masterlock {
-        background-color: $masterlock-purple;
-      }
-
-      &.mycareer {
-        background-color: $mycareer-blue;
-      }
-
-      &.scorpioncf {
-        background-color: $crossfit-gold;
-      }
-
-      &.akta {
-        background-color: $akta-red;
-      }
-
-      &.mercaris {
-        background-color: $mercaris-green;
-      }
-
-      &.lucid {
-        background-color: $lucid-blue;
-      }
-
-      &.hcsc {
-        background-color: $hcsc-orange;
-      }
-
-      &.dotrebate {
-        background-color: $dotrebate-purple;
-      }
-
-      &.johndeere {
-        background-color: $johndeere-green;
       }
     }
   }
@@ -107,14 +65,61 @@
 
 //Work Overlays
 .hover-tile-outer {
-  padding: 0;
+  margin: 10px;
+  border-radius: 3px;
+  height: 400px;
+
+  @media (max-width:472px) {
+    height: 330px;
+    margin: 10px 0;
+  }
+
+  &.flo {
+    background-color: lighten($flo-pink, 10%);
+  }
+
+  &.masterlock {
+    background-color: lighten($masterlock-purple, 10%);
+  }
+
+  &.mycareer {
+    background-color: lighten($mycareer-blue, 10%);
+  }
+
+  &.scorpioncf {
+    background-color: lighten($crossfit-gold, 10%);
+  }
+
+  &.akta {
+    background-color: lighten($akta-red, 10%);
+  }
+
+  &.mercaris {
+    background-color: lighten($mercaris-green, 10%);
+  }
+
+  &.lucid {
+    background-color: lighten($lucid-blue, 10%);
+  }
+
+  &.hcsc {
+    background-color: lighten($hcsc-orange, 10%);
+  }
+
+  &.dotrebate {
+    background-color: lighten($dotrebate-purple, 10%);
+  }
+
+  &.johndeere {
+    background-color: lighten($johndeere-green, 10%);
+  }
 
   .hover-tile-container {
     height: 400px;
     overflow: hidden;
 
     @media (max-width:472px) {
-      height: 350px;
+      height: 340px;
     }
   }
 
@@ -129,6 +134,10 @@
     text-align: center;
     background-color: $brand-grey-light;
     transition: background-color 0.1s ease-in-out;
+
+    @media (max-width:472px) {
+      left: 10px;
+    }
 
     &:hover,
     &:active {
@@ -219,12 +228,13 @@
 
       .hover-tile-hidden {
         height: 400px;
+        border-radius: 3px;
         -ms-transform: translate(0, -100%);
         -webkit-transform: translate(0, -100%);
         transform: translate(0, -100%);
 
         @media (max-width: 472px) {
-          height: 350px;
+          height: 340px;
         }
       }
     }
@@ -240,7 +250,7 @@
           transform: translate(0, -100%);
 
           @media (max-width: 472px) {
-            height: 350px;
+            height: 340px;
           }
         }
       }
@@ -314,7 +324,7 @@
     .tile-content {
       @include vertically-align();
       .work-name {
-        font-size: 32px;
+        font-size: 30px;
         margin-bottom: 30px;
         font-weight: 700;
       }
@@ -322,7 +332,7 @@
       a {
         border: 4px solid white;
         border-radius: 1px;
-        font-size: 18px;
+        font-size: 17px;
         font-weight: bold;
         color: white;
         width: 230px;

@@ -47,14 +47,13 @@
       width: 55%;
       float: left;
       text-align: left;
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 800;
+      font-family: $sans-serif-font;
+      font-weight: 700;
       line-height: 1.0;
       font-size: 33px;
-      text-transform: uppercase;
-      // background: -webkit-gradient(linear, left top, left bottom, from($brand-teal), to($brand-purple));
-      //   -webkit-background-clip: text;
-      //   -webkit-text-fill-color: transparent;
+      background: -webkit-gradient(linear, left top, left bottom, from($brand-blue), to($brand-teal));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
 
       @media (max-width: 535px) {
         font-size: 22px;
@@ -73,31 +72,10 @@
       }
 
       .name {
+        text-transform: uppercase;
+        font-weight: 800;
         color: $brand-teal;
         margin-bottom: 15px;
-      }
-
-      .title {
-
-        &.developer {
-          color: $brand-purple;
-        }
-
-        &.designer {
-          color: $brand-green;
-        }
-
-        &.photographer {
-          color: $brand-pink;
-        }
-
-        &.baker {
-          color: $brand-blue;
-        }
-
-        &.reader {
-          color: $brand-orange;
-        }
       }
     }
   }

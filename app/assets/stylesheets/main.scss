@@ -3,7 +3,7 @@
 html,
 body {
   height: 100%;
-  width: 100%;  
+  width: 100%;
 }
 
 .content {
@@ -16,7 +16,7 @@ body {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $sans-serif-font;
 }
 
 .content {
@@ -30,7 +30,7 @@ body {
 }
 
 .section-title {
-  
+
   .text-column {
     color: $white;
     padding-top: 30px;

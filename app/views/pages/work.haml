@@ -2,121 +2,131 @@
 .work-block
   .container
     .work-row
-      .project-column.dotrebate.hover-tile-outer
-        .hover-tile-container
-          .hover-tile.hover-tile-visible
-            = image_tag "dotrebate.png"
-            %button.btn.work-info-button
-              .glyphicon.glyphicon-plus.dotrebate
-          .hover-tile.hover-tile-hidden.dotrebate
-            .tile-content
-              .work-name Dot Rebate
-              .coming-soon Redesign still in progress- stay tuned!
-              .header Skills strengthened:
-              .skills Sketch, Photoshop, Rails
-      .project-column.johndeere.hover-tile-outer
-        .hover-tile-container
-          .hover-tile.hover-tile-visible
-            = image_tag "johndeere.png"
-            %button.btn.work-info-button
-              .glyphicon.glyphicon-plus.johndeere
-          .hover-tile.hover-tile-hidden.johndeere
-            .tile-content
-              .work-name John Deere
-              .header Skills strengthened:
-              .skills Selenium, JUnit, Cucumber
-      .project-column.hcsc.hover-tile-outer
-        .hover-tile-container
-          .hover-tile.hover-tile-visible
-            = image_tag "hcsc.png"
-            %button.btn.work-info-button
-              .glyphicon.glyphicon-plus.hcsc
-          .hover-tile.hover-tile-hidden.hcsc
-            .tile-content
-              .work-name HCSC Assistance Finder
-              = link_to "View App", "http://assistancefinder.hcsc.net/assistance-finder/tx/en#/", class: "btn hcsc-btn", target: "_blank"
-              .header Skills strengthened:
-              .skills Spring, Java, Angular.js
-      .project-column.lucid.hover-tile-outer
-        .hover-tile-container
-          .hover-tile.hover-tile-visible
-            = image_tag "lucid.png"
-            %button.btn.work-info-button
-              .glyphicon.glyphicon-plus.lucid
-          .hover-tile.hover-tile-hidden.lucid
-            .tile-content
-              .work-name Lucid
-              .header Skills strengthened:
-              .skills Angular.js, SASS
-      .project-column.mercaris.hover-tile-outer
-        .hover-tile-container
-          .hover-tile.hover-tile-visible
-            = image_tag "mercaris.png"
-            %button.btn.work-info-button
-              .glyphicon.glyphicon-plus.mercaris
-          .hover-tile.hover-tile-hidden.mercaris
-            .tile-content
-              .work-name Mercaris
-              = link_to "View App", "http://www.mercaris.com/", class: "btn mercaris-btn", target: "_blank"
-              .header Skills strenghtened:
-              .skills Rails, JavaScript, Ruby
-      .project-column.flo.hover-tile-outer
-        .hover-tile-container
-          .hover-tile.hover-tile-visible
-            = image_tag "flo.png"
-            %button.btn.work-info-button
-              .glyphicon.glyphicon-plus.flo
-          .hover-tile.hover-tile-hidden.flo
-            .tile-content
-              .work-name Flo Music
-              = link_to "View Site", "http://flomusic.com/", class: "btn flo-btn", target: "_blank"
-              .header Skills strengthened:
-              .skills Wordpress, PHP, SASS, JavaScript, Bootstrap, Grunt
-      .project-column.masterlock.hover-tile-outer
-        .hover-tile-container
-          .hover-tile.hover-tile-visible
-            = image_tag "masterlock.png", class: "masterlock-image"
-            %button.btn.work-info-button
-              .glyphicon.glyphicon-plus.masterlock
-          .hover-tile.hover-tile-hidden.masterlock
-            .tile-content
-              .work-name Masterlock e-locks
-              = link_to "View in Google Play", "https://play.google.com/store/apps/details?id=com.masterlock.ble.app", class: "btn masterlock-btn", target: "_blank"
-              .header Skills strengthened:
-              .skills Java, Android, Android libraries
-      .project-column.mycareer.hover-tile-outer
-        .hover-tile-container
-          .hover-tile.hover-tile-visible
-            = image_tag "mycareer.png"
-            %button.btn.work-info-button
-              .glyphicon.glyphicon-plus.mycareer
-          .hover-tile.hover-tile-hidden.mycareer
-            .tile-content
-              .work-name Exelon myCareer
-              = link_to "View Article", "http://www.chicagotribune.com/bluesky/originals/chi-exelon-mycareer-app-bsi-20141224-story.html", class: "btn mycareer-btn", target: "_blank"
-              .header Skills strengthened:
-              .skills Angular.js, LESS, HTML5, Agile methodologies, cross-browser testing
-      .project-column.scorpioncf.hover-tile-outer
-        .hover-tile-container
-          .hover-tile.hover-tile-visible
-            = image_tag "scorpioncf.png"
-            %button.btn.work-info-button
-              .glyphicon.glyphicon-plus.scorpioncf
-          .hover-tile.hover-tile-hidden.scorpioncf
-            .tile-content
-              .work-name Scorpion Crossfit
-              = link_to "View App", "https://www.scorpioncrossfit.net/", class: "btn scorpioncf-btn", target: "_blank"
-              .header Skills strengthened:
-              .skills Rails, SASS, Ruby Slim, Design, Coffeescript
-      .project-column.akta.hover-tile-outer#akta
-        .hover-tile-container
-          .hover-tile.hover-tile-visible
-            = image_tag "akta.png"
-            %button.btn.work-info-button
-              .glyphicon.glyphicon-plus.akta
-          .hover-tile.hover-tile-hidden.akta
-            .tile-content
-              .work-name AKTA.com
-              = link_to "View Site", "http://akta.com/", class: "btn akta-btn", target: "_blank"
-              .header Skills strengthened:
-              .skills PHP, Wordpress, CSS, AJAX
+      .project-column
+        .dotrebate.hover-tile-outer
+          .hover-tile-container
+            .hover-tile.hover-tile-visible
+              = image_tag "dotrebate.png"
+              %button.btn.work-info-button
+                .glyphicon.glyphicon-plus.dotrebate
+            .hover-tile.hover-tile-hidden.dotrebate
+              .tile-content
+                .work-name Dot Rebate
+                .coming-soon Redesign still in progress- stay tuned!
+                .header Skills strengthened:
+                .skills Sketch, Photoshop, Rails
+      .project-column
+        .johndeere.hover-tile-outer
+          .hover-tile-container
+            .hover-tile.hover-tile-visible
+              = image_tag "johndeere.png"
+              %button.btn.work-info-button
+                .glyphicon.glyphicon-plus.johndeere
+            .hover-tile.hover-tile-hidden.johndeere
+              .tile-content
+                .work-name John Deere
+                .header Skills strengthened:
+                .skills Selenium, JUnit, Cucumber
+      .project-column
+        .hcsc.hover-tile-outer
+          .hover-tile-container
+            .hover-tile.hover-tile-visible
+              = image_tag "hcsc.png"
+              %button.btn.work-info-button
+                .glyphicon.glyphicon-plus.hcsc
+            .hover-tile.hover-tile-hidden.hcsc
+              .tile-content
+                .work-name HCSC Assistance Finder
+                = link_to "View App", "http://assistancefinder.hcsc.net/assistance-finder/tx/en#/", class: "btn hcsc-btn", target: "_blank"
+                .header Skills strengthened:
+                .skills Spring, Java, Angular.js
+      .project-column
+        .lucid.hover-tile-outer
+          .hover-tile-container
+            .hover-tile.hover-tile-visible
+              = image_tag "lucid.png"
+              %button.btn.work-info-button
+                .glyphicon.glyphicon-plus.lucid
+            .hover-tile.hover-tile-hidden.lucid
+              .tile-content
+                .work-name Lucid
+                .header Skills strengthened:
+                .skills Angular.js, SASS
+      .project-column
+        .mercaris.hover-tile-outer
+          .hover-tile-container
+            .hover-tile.hover-tile-visible
+              = image_tag "mercaris.png"
+              %button.btn.work-info-button
+                .glyphicon.glyphicon-plus.mercaris
+            .hover-tile.hover-tile-hidden.mercaris
+              .tile-content
+                .work-name Mercaris
+                = link_to "View App", "http://www.mercaris.com/", class: "btn mercaris-btn", target: "_blank"
+                .header Skills strenghtened:
+                .skills Rails, JavaScript, Ruby
+      .project-column
+        .flo.hover-tile-outer
+          .hover-tile-container
+            .hover-tile.hover-tile-visible
+              = image_tag "flo.png"
+              %button.btn.work-info-button
+                .glyphicon.glyphicon-plus.flo
+            .hover-tile.hover-tile-hidden.flo
+              .tile-content
+                .work-name Flo Music
+                = link_to "View Site", "http://flomusic.com/", class: "btn flo-btn", target: "_blank"
+                .header Skills strengthened:
+                .skills Wordpress, PHP, SASS, JavaScript, Bootstrap, Grunt
+      .project-column
+        .masterlock.hover-tile-outer
+          .hover-tile-container
+            .hover-tile.hover-tile-visible
+              = image_tag "masterlock.png", class: "masterlock-image"
+              %button.btn.work-info-button
+                .glyphicon.glyphicon-plus.masterlock
+            .hover-tile.hover-tile-hidden.masterlock
+              .tile-content
+                .work-name Masterlock e-locks
+                = link_to "View in Google Play", "https://play.google.com/store/apps/details?id=com.masterlock.ble.app", class: "btn masterlock-btn", target: "_blank"
+                .header Skills strengthened:
+                .skills Java, Android, Android libraries
+      .project-column
+        .mycareer.hover-tile-outer
+          .hover-tile-container
+            .hover-tile.hover-tile-visible
+              = image_tag "mycareer.png"
+              %button.btn.work-info-button
+                .glyphicon.glyphicon-plus.mycareer
+            .hover-tile.hover-tile-hidden.mycareer
+              .tile-content
+                .work-name Exelon myCareer
+                = link_to "View Article", "http://www.chicagotribune.com/bluesky/originals/chi-exelon-mycareer-app-bsi-20141224-story.html", class: "btn mycareer-btn", target: "_blank"
+                .header Skills strengthened:
+                .skills Angular.js, LESS, HTML5, Agile methodologies, cross-browser testing
+      .project-column
+        .scorpioncf.hover-tile-outer
+          .hover-tile-container
+            .hover-tile.hover-tile-visible
+              = image_tag "scorpioncf.png"
+              %button.btn.work-info-button
+                .glyphicon.glyphicon-plus.scorpioncf
+            .hover-tile.hover-tile-hidden.scorpioncf
+              .tile-content
+                .work-name Scorpion Crossfit
+                = link_to "View App", "https://www.scorpioncrossfit.net/", class: "btn scorpioncf-btn", target: "_blank"
+                .header Skills strengthened:
+                .skills Rails, SASS, Ruby Slim, Design, Coffeescript
+      .project-column
+        .akta.hover-tile-outer#akta
+          .hover-tile-container
+            .hover-tile.hover-tile-visible
+              = image_tag "akta.png"
+              %button.btn.work-info-button
+                .glyphicon.glyphicon-plus.akta
+            .hover-tile.hover-tile-hidden.akta
+              .tile-content
+                .work-name AKTA.com
+                = link_to "View Site", "http://akta.com/", class: "btn akta-btn", target: "_blank"
+                .header Skills strengthened:
+                .skills PHP, Wordpress, CSS, AJAX
