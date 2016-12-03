@@ -51,9 +51,24 @@
       font-weight: 700;
       line-height: 1.0;
       font-size: 33px;
-      background: -webkit-gradient(linear, left top, left bottom, from($brand-blue), to($brand-teal));
+      background: $brand-blue;
+      background: -webkit-linear-gradient($brand-blue, $brand-teal);
+      background: -o-linear-gradient($brand-blue, $brand-teal);
+      background: -moz-linear-gradient($brand-blue, $brand-teal);
+      background: linear-gradient($brand-blue, $brand-teal);
       -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
+
+      @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) {
+        background: initial;
+        -webkit-background-clip: initial;
+        -webkit-text-fill-color: initial;
+
+        .title {
+          color: $brand-blue;
+        }
+      }
 
       @media (max-width: 535px) {
         font-size: 22px;
