@@ -3,6 +3,32 @@
   .container
     .work-row
       .project-column
+        .gitlab.hover-tile-outer
+          .hover-tile-container
+            .hover-tile.hover-tile-visible
+              = image_tag "gitlab-app.png"
+              %button.btn.work-info-button
+                .glyphicon.glyphicon-plus.gitlab
+            .hover-tile.hover-tile-hidden.gitlab
+              .tile-content
+                .work-name GitLab CE/EE
+                = link_to "View App", "https://gitlab.com/gitlab-org/gitlab-ce", class: "btn gitlab-btn", target: "_blank"
+                .header Skills strengthened:
+                .skills SCSS, Rails, Vue.js, RSpec, ES6
+      .project-column
+        .gitlab-com.hover-tile-outer
+          .hover-tile-container
+            .hover-tile.hover-tile-visible
+              = image_tag "gitlab-com.png"
+              %button.btn.work-info-button
+                .glyphicon.glyphicon-plus.gitlab-com
+            .hover-tile.hover-tile-hidden.gitlab-com
+              .tile-content
+                .work-name GitLab
+                = link_to "View Site", "https://about.gitlab.com/", class: "btn gitlab-com-btn", target: "_blank"
+                .header Skills strengthened:
+                .skills Middleman, Ruby, JavaScript
+      .project-column
         .dotrebate.hover-tile-outer
           .hover-tile-container
             .hover-tile.hover-tile-visible

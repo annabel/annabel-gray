@@ -110,6 +110,14 @@
     background-color: lighten($johndeere-green, 10%);
   }
 
+  &.gitlab-com {
+    background-color: lighten($gitlab-com-purple, 10%);
+  }
+
+  &.gitlab {
+    background-color: lighten($gitlab-orange, 10%);
+  }
+
   .hover-tile-container {
     height: 400px;
     overflow: hidden;
@@ -220,6 +228,14 @@
         &.johndeere {
           color: $johndeere-green;
         }
+
+        &.gitlab-com {
+          color: $gitlab-com-purple;
+        }
+
+        &.gitlab {
+          color: $gitlab-orange;
+        }
       }
 
       .hover-tile-hidden {
@@ -318,6 +334,14 @@
       background-color: darken($johndeere-green, 5%);
     }
 
+    &.gitlab-com {
+      background-color: $gitlab-com-purple;
+    }
+
+    &.gitlab {
+      background-color: $gitlab-orange;
+    }
+
     .tile-content {
       @include vertically-align();
       .work-name {
@@ -368,6 +392,14 @@
 
           &.hcsc-btn {
             color: $hcsc-orange;
+          }
+
+          &.gitlab-com-btn {
+            color: $gitlab-com-purple;
+          }
+
+          &.gitlab-btn {
+            color: $gitlab-orange;
           }
         }
       }
