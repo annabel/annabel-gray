@@ -3,6 +3,19 @@
   .container
     .work-row
       .project-column
+        .light-blue.hover-tile-outer
+          .hover-tile-container
+            .hover-tile.hover-tile-visible
+              = image_tag "gitlab-com.png"
+              %button.btn.work-info-button
+                .glyphicon.glyphicon-plus.light-blue
+            .hover-tile.hover-tile-hidden.light-blue
+              .tile-content
+                .work-name GitLab.com
+                = link_to "View Site", "https://about.gitlab.com/", class: "btn light-blue-btn", target: "_blank"
+                .header Skills strengthened:
+                .skills Middleman, Ruby, JavaScript
+      .project-column
         .dark-pink.hover-tile-outer
           .hover-tile-container
             .hover-tile.hover-tile-visible
@@ -12,22 +25,9 @@
             .hover-tile.hover-tile-hidden.dark-pink
               .tile-content
                 .work-name GitLab CE/EE
-                = link_to "View App", "https://gitlab.com/gitlab-org/gitlab-ce", class: "btn dark-pink-btn", target: "_blank"
+                = link_to "View Repo", "https://gitlab.com/gitlab-org/gitlab-ce", class: "btn dark-pink-btn", target: "_blank"
                 .header Skills strengthened:
                 .skills SCSS, Rails, Vue.js, RSpec, ES6
-      .project-column
-        .light-blue.hover-tile-outer
-          .hover-tile-container
-            .hover-tile.hover-tile-visible
-              = image_tag "gitlab-com.png"
-              %button.btn.work-info-button
-                .glyphicon.glyphicon-plus.light-blue
-            .hover-tile.hover-tile-hidden.light-blue
-              .tile-content
-                .work-name GitLab
-                = link_to "View Site", "https://about.gitlab.com/", class: "btn light-blue-btn", target: "_blank"
-                .header Skills strengthened:
-                .skills Middleman, Ruby, JavaScript
       .project-column
         .dotrebate.hover-tile-outer
           .hover-tile-container
