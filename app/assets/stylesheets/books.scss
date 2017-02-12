@@ -4,6 +4,7 @@
 }
 
 .books-column {
+  @include make-xs-column(12);
   @include make-sm-column(6);
 }
 
@@ -17,14 +18,11 @@
   img {
     height: 180px;
     width: auto;
+    margin-bottom: 10px;
   }
 
-  .book-title {
-    margin-top: 10px;
-    font-size: 16px;
-  }
-
-  .date {
-    font-size: 13px;
-  }
+}
+.date {
+  font-size: 12px;
+  color: $gray-text;
 }
