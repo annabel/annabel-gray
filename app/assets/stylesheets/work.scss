@@ -78,16 +78,16 @@
     background-color: lighten($masterlock-purple, 10%);
   }
 
-  &.mycareer {
-    background-color: lighten($mycareer-blue, 10%);
+  &.light-blue {
+    background-color: lighten($light-blue, 10%);
   }
 
   &.scorpioncf {
     background-color: lighten($crossfit-gold, 10%);
   }
 
-  &.akta {
-    background-color: lighten($akta-red, 10%);
+  &.dark-pink {
+    background-color: lighten($dark-pink, 10%);
   }
 
   &.mercaris {
@@ -108,14 +108,6 @@
 
   &.johndeere {
     background-color: lighten($johndeere-green, 10%);
-  }
-
-  &.gitlab-com {
-    background-color: lighten($gitlab-com-purple, 10%);
-  }
-
-  &.gitlab {
-    background-color: lighten($gitlab-orange, 10%);
   }
 
   .hover-tile-container {
@@ -197,16 +189,16 @@
           color: $masterlock-purple;
         }
 
-        &.mycareer {
-          color: $mycareer-blue;
+        &.light-blue {
+          color: $light-blue;
         }
 
         &.scorpioncf {
           color: $crossfit-gold;
         }
 
-        &.akta {
-          color: $akta-red;
+        &.dark-pink {
+          color: $dark-pink;
         }
 
         &.mercaris {
@@ -227,14 +219,6 @@
 
         &.johndeere {
           color: $johndeere-green;
-        }
-
-        &.gitlab-com {
-          color: $gitlab-com-purple;
-        }
-
-        &.gitlab {
-          color: $gitlab-orange;
         }
       }
 
@@ -302,16 +286,16 @@
       background-color: darken($masterlock-purple, 5%);
     }
 
-    &.mycareer {
-      background-color: darken($mycareer-blue, 5%);
+    &.light-blue {
+      background-color: darken($light-blue, 5%);
     }
 
     &.scorpioncf {
-      background-color: darken($crossfit-gold, 5%);
+      background-color: darken($crossfit-gold, 10%);
     }
 
-    &.akta {
-      background-color: darken($akta-red, 5%);
+    &.dark-pink {
+      background-color: darken($dark-pink, 5%);
     }
 
     &.mercaris {
@@ -332,14 +316,6 @@
 
     &.johndeere {
       background-color: darken($johndeere-green, 5%);
-    }
-
-    &.gitlab-com {
-      background-color: $gitlab-com-purple;
-    }
-
-    &.gitlab {
-      background-color: $gitlab-orange;
     }
 
     .tile-content {
@@ -374,16 +350,16 @@
             color: $masterlock-purple;
           }
 
-          &.mycareer-btn {
-            color: $mycareer-blue;
+          &.light-blue-btn {
+            color: $light-blue;
           }
 
           &.scorpioncf-btn {
             color: $crossfit-gold;
           }
 
-          &.akta-btn {
-            color: $akta-red;
+          &.dark-pink-btn {
+            color: $dark-pink;
           }
 
           &.mercaris-btn {
@@ -392,14 +368,6 @@
 
           &.hcsc-btn {
             color: $hcsc-orange;
-          }
-
-          &.gitlab-com-btn {
-            color: $gitlab-com-purple;
-          }
-
-          &.gitlab-btn {
-            color: $gitlab-orange;
           }
         }
       }
