@@ -1,15 +1,19 @@
 .headline-books {
   background: linear-gradient(to right, $brand-teal, $mercaris-green);
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .books-column {
+  @media (max-width: 345px) {
+    @include make-xs-column(24);
+  }
   @include make-xs-column(12);
   @include make-sm-column(6);
+
 }
 
 .book {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   text-align: center;
   padding: 15px;
   border-radius: 3px;
@@ -21,8 +25,21 @@
     margin-bottom: 10px;
   }
 
+  .date {
+    font-size: 12px;
+    color: $gray-text;
+  }
 }
-.date {
-  font-size: 12px;
-  color: $gray-text;
+
+.book-rating {
+
+  .star {
+    font-size: 20px;
+    color: $empty-star-gray;
+    margin: 0 -1px;
+  }
+
+  .star-full {
+    color: $hcsc-orange;
+  }
 }
