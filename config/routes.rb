@@ -3,6 +3,6 @@ Rails.application.routes.draw do
     post "/send_message", to: "pages#send_message"
     get '/work', to: "pages#work"
     get '/photography', to: "pages#photography"
-    get '/blog', to: "pages#blog"
+    get '/books', to: "pages#books"
     get '/contact', to: "pages#contact"
 end
