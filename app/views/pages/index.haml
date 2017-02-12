@@ -4,13 +4,13 @@
       = image_tag "me.png"
     .text
       .name Annabel Dunstone Gray
-      = link_to "https://gitlab.com/u/annabeldunstone", target: "_blank" do
-        .title.developer Front End Engineer
-      = link_to work_path do
-        .title.designer Occasional Designer
-      = link_to photography_path do
-        .title.photographer Amateur Photographer
-      / = link_to blog_path do
+      .title.developer
+        = link_to "Frontend Engineer", "https://gitlab.com/u/annabeldunstone", target: "_blank"
+      .title.designer
+        = link_to "Occasional Designer", work_path
+      .title.photographer
+        = link_to "Amateur Photographer", photography_path
       .title.baker Experimental Baker
-      = link_to "http://www.goodreads.com/user/show/29443888-annabel-dunstone", target: "_blank" do
-        .title.reader Avid Reader
+      / = link_to blog_path do
+      .title.reader
+        = link_to "Avid Reader", "http://www.goodreads.com/user/show/29443888-annabel-dunstone", target: "_blank"

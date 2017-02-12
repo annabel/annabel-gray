@@ -48,7 +48,7 @@
       float: left;
       text-align: left;
       font-family: $sans-serif-font;
-      font-weight: 600;
+      font-weight: 500;
       line-height: 1.0;
       font-size: 33px;
 
@@ -75,26 +75,24 @@
         margin-bottom: 15px;
       }
 
-      .title {
-        &.developer {
-          color: #1EBFC8;
-        }
+      .developer a {
+        color: #1EBFC8;
+      }
 
-        &.designer {
-          color: #21C1C3;
-        }
+      .designer a {
+        color: #21C1C3;
+      }
 
-        &.photographer {
-          color: #23C3BF;
-        }
+      .photographer a {
+        color: #23C3BF;
+      }
 
-        &.baker {
-          color: #26C6BB;
-        }
+      .baker {
+        color: #26C6BB;
+      }
 
-        &.reader {
-          color: #29C8B7;
-        }
+      .reader a {
+        color: #29C8B7;
       }
     }
   }

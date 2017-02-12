@@ -47,11 +47,19 @@
           background: -webkit-gradient(linear, left top, left bottom, from($brand-blue), to($brand-teal));
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
+          color: $brand-teal;
         }
 
         &.active {
           a {
             border-bottom: 2px solid lighten($brand-teal, 20%);
+          }
+        }
+
+        &:hover:not(.active) {
+          a {
+            -webkit-text-fill-color: lighten($brand-blue, 15%);
+            color: lighten($brand-blue, 15%);
           }
         }
 
@@ -78,6 +86,10 @@
 
       &.home {
         color: $brand-teal;
+
+        &:hover {
+          color: lighten($brand-blue, 15%);
+        }
 
         .home-text {
           @media (max-width: $screen-sm-max) {
