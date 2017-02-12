@@ -1,9 +1,30 @@
-.books-page {
-  text-align: center;
+.headline-books {
+  background: linear-gradient(to right, $brand-teal, $mercaris-green);
+  margin-bottom: 40px;
 }
 
-.books-coming-soon {
-  color: lighten($brand-grey-light, 20%);
-  font-size: 26px;
-  padding-top: 120px;
+.books-column {
+  @include make-sm-column(6);
+}
+
+.book {
+  margin-bottom: 40px;
+  text-align: center;
+  padding: 15px;
+  border-radius: 3px;
+  background-color: $brand-grey-lighter;
+
+  img {
+    height: 180px;
+    width: auto;
+  }
+
+  .book-title {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  .date {
+    font-size: 13px;
+  }
 }
