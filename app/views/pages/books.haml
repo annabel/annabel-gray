@@ -13,7 +13,11 @@
     - @books.each do |book|
       .books-column
         .book
-          = image_tag "books/#{book['title']}.jpg"
+          - if book['link']
+            = link_to book['link'], target: "_blank" do
+              = image_tag "books/#{book['title']}.jpg"
+          - else
+            = image_tag "books/#{book['title']}.jpg"
           .book-rating
             - book['stars'].times do
               %span.star.star-full &#9733;
