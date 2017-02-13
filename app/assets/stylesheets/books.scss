@@ -1,6 +1,10 @@
 .headline-books {
   background: linear-gradient(to right, $brand-teal, $mercaris-green);
   margin-bottom: 30px;
+
+  a {
+    border-bottom: 2px solid $white;
+  }
 }
 
 .books-column {
@@ -9,11 +13,6 @@
   }
   @include make-xs-column(12);
   @include make-sm-column(6);
-}
-
-// Delete this once banner is in
-.books-row {
-  margin-top: 10px;
 }
 
 .book {
@@ -26,7 +25,7 @@
   img {
     height: 180px;
     width: auto;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
   }
 
   .date {
