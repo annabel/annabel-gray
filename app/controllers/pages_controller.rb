@@ -8,6 +8,14 @@ class PagesController < ApplicationController
     end
   end
 
+  def books
+    @books = []
+    Dir.glob(Rails.root.join('app', 'books', '*.yml')) do |book_file|
+      @books << YAML.load_file(book_file)
+    end
+    @books.sort_by! { |book| Date.parse(book['date']) }.reverse!
+  end
+
   private
 
   def message_params
