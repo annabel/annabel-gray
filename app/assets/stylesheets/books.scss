@@ -9,7 +9,11 @@
   }
   @include make-xs-column(12);
   @include make-sm-column(6);
+}
 
+// Delete this once banner is in
+.books-row {
+  margin-top: 10px;
 }
 
 .book {
