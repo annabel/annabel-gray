@@ -1,0 +1,22 @@
+- provide(:title, "Books")
+-# .headline-books
+-#   .container
+-#     .section-title
+-#       .text-column
+-#         .header Books
+-#         .text
+-#           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+-#           et dolore magna aliqua. Inspired by https://www.gatesnotes.com/Books. Explain star rating
+
+.container
+  .row.books-row
+    - @books.each do |book|
+      .books-column
+        .book
+          = image_tag "books/#{book['title']}.jpg"
+          .book-rating
+            - book['stars'].times do
+              %span.star.star-full &#9733;
+            - (5 - book['stars']).times do
+              %span.star &#9733;
+          .date= book['date']
