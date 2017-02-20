@@ -20,13 +20,39 @@
   margin-bottom: 30px;
   text-align: center;
   padding: 15px;
-  border-radius: 3px;
+  position: relative;
   background-color: $brand-grey-lighter;
 
   img {
     height: 180px;
     width: auto;
     margin-bottom: 6px;
+  }
+
+  .shop-link {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 50px 50px;
+    border-color: transparent transparent darken($brand-grey-lighter, 5%) transparent;
+
+    .glyphicon {
+      color: darken($brand-grey-lighter, 20%);
+      position: absolute;
+      top: 28px;
+      right: 7px;
+    }
+
+    &:hover {
+      border-bottom-color: darken($brand-grey-lighter, 10%);
+
+      .glyphicon {
+        color: darken($brand-grey-lighter, 30%);
+      }
+    }
   }
 
   .date {

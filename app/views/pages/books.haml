@@ -13,15 +13,14 @@
   .row.books-row
     - @books.each do |book|
       .books-column
-        .book
-          - if book['link']
-            = link_to book['link'], target: "_blank" do
-              = image_tag "books/#{book['title']}.jpg"
-          - else
-            = image_tag "books/#{book['title']}.jpg"
+        .book{ class: ("featured" if book['stars'] == 5)}
+          = image_tag "books/#{book['title']}.jpg"
           .book-rating
             - book['stars'].times do
               %span.star.star-full &#9733;
             - (5 - book['stars']).times do
               %span.star &#9733;
           .date= book['date']
+          - if book['link']
+            = link_to book['link'], class: "shop-link", target: "_blank" do
+              .glyphicon.glyphicon-share
