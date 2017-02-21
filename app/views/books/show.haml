@@ -1,1 +1,15 @@
-%h1= @book['slug']
+- provide(:title, "#{@book['title']}" + "Review")
+.headline-book-review
+
+.container.review-container
+  .row
+    .review-column
+      = image_tag "books/#{@book['slug']}.jpg"
+      .book-title= @book['title']
+      .book-author by #{@book['author']}
+      .publisher
+        =@book['publisher']
+        = link_to @book['link'], class: "shop-link", target: "_blank" do
+          .glyphicon.glyphicon-share
+      .quote= @book['quote']
+      .review= @book['review'].html_safe

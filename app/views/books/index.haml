@@ -29,7 +29,7 @@
               %span.star &#9733;
           .date= book['date']
           - if book['review']
-            = link_to "Read review", book_path(book['slug'])
+            = link_to "Read review", book_path(book['slug']), class: "review-link"
           - if book['link']
             = link_to book['link'], class: "shop-link", target: "_blank" do
               .glyphicon.glyphicon-share
