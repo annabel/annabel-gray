@@ -1,5 +1,5 @@
 .headline-books {
-  background: linear-gradient(to right, $dark-pink, $hcsc-orange);
+  background-color: $blueish-gray;
   margin-bottom: 30px;
 
   a {
@@ -71,5 +71,32 @@
 
   .star-full {
     color: $hcsc-orange;
+  }
+}
+
+.year-buttons-container {
+  padding: 0 15px 30px;
+
+  @media (max-width: $screen-sm-max) {
+    text-align: center;
+  }
+
+  .books-year {
+    color: darken($blueish-gray, 12%);
+    font-weight: 600;
+    font-size: 18px;
+    padding-bottom: 4px;
+
+    &:not(:last-of-type) {
+      margin-right: 30px;
+    }
+
+    &.active {
+      border-bottom: 2px solid;
+    }
+
+    &:hover {
+      color: $blueish-gray;
+    }
   }
 }

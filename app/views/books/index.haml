@@ -12,12 +12,12 @@
 
 .container
   .row
-    - @available_years.each do |year|
-      - class_name = "books-year " + year
-      - class_name += " active" if @current_year == year
-      = link_to year, books_path(year: year), class: class_name
+    .year-buttons-container
+      - @available_years.each do |year|
+        - class_name = "books-year " + year
+        - class_name += " active" if @current_year == year
+        = link_to year, books_path(year: year), class: class_name
   .row.books-row
-    %h2= @current_year
     - @books.each do |book|
       .books-column
         .book{ class: ("featured" if book['stars'] == 5)}
