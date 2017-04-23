@@ -3,6 +3,7 @@ class BooksController < ApplicationController
     @available_years = Dir.glob(Rails.root.join('app', 'books', '*'))
                          .select { |path| File.directory?(path) }
                          .map { |path| path.split('/').last }
+                         .sort
                          .reverse
 
     year_param = ActionController::Base.helpers.sanitize(params[:year])
