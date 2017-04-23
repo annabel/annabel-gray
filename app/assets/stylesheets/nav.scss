@@ -44,22 +44,19 @@
         a {
           padding-bottom: 5px;
           font-weight: 500;
-          background: -webkit-gradient(linear, left top, left bottom, from($brand-blue), to($brand-teal));
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          color: $brand-teal;
+          color: darken($blueish-gray, 12%);
         }
 
         &.active {
           a {
-            border-bottom: 2px solid lighten($brand-teal, 20%);
+            color: $brand-blue;
+            border-bottom: 2px solid;
           }
         }
 
         &:hover:not(.active) {
           a {
-            -webkit-text-fill-color: lighten($brand-blue, 15%);
-            color: lighten($brand-blue, 15%);
+            color: $brand-blue;
           }
         }
 
@@ -80,15 +77,20 @@
       font-family: $sans-serif-font;
       font-weight: 700;
       text-transform: uppercase;
+
       @media (max-width: 510px) {
         font-size: 14px;
       }
 
       &.home {
-        color: $brand-teal;
+        color: darken($blueish-gray, 12%);
 
         &:hover {
-          color: lighten($brand-blue, 15%);
+          color: $brand-teal;
+
+          img {
+            filter: none;
+          }
         }
 
         .home-text {
@@ -96,12 +98,16 @@
             display: none;
           }
         }
+
+        img {
+          -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+        }
       }
 
       &:hover {
         background-color: transparent;
       }
     }
-
   }
 }

@@ -82,7 +82,7 @@
   }
 
   .books-year {
-    color: darken($blueish-gray, 12%);
+    color: $brand-blue;
     font-weight: 600;
     font-size: 18px;
     padding-bottom: 4px;
@@ -92,11 +92,12 @@
     }
 
     &.active {
+      color: $brand-blue;
       border-bottom: 2px solid;
     }
 
-    &:hover {
-      color: $blueish-gray;
+    &:hover:not(.active) {
+      color: lighten($brand-blue, 5%);
     }
   }
 }
