@@ -9,8 +9,15 @@
           <a href="http://www.goodreads.com/annabelgray" target="_blank">goodreads</a>). I'm obviously not a book critic, so feel free
           to take my ratings with a grain of salt!
 
+
 .container
+  .row
+    - @available_years.each do |year|
+      - class_name = "books-year " + year
+      - class_name += " active" if @current_year == year
+      = link_to year, books_path(year: year), class: class_name
   .row.books-row
+    %h2= @current_year
     - @books.each do |book|
       .books-column
         .book{ class: ("featured" if book['stars'] == 5)}
