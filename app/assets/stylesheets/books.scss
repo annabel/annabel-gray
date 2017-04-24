@@ -19,9 +19,14 @@
 .book {
   margin-bottom: 30px;
   text-align: center;
-  padding: 15px;
+  padding: 15px 15px 12px;
+  min-height: 280px;
   position: relative;
   background-color: $brand-grey-lighter;
+
+  &.featured {
+    outline: 2px solid darken($brand-grey-lighter, 5%);
+  }
 
   img {
     height: 180px;
@@ -59,10 +64,14 @@
     font-size: 12px;
     color: $gray-text;
   }
+
+  .review-link {
+    color: $brand-blue;
+    font-size: 12px;
+  }
 }
 
 .book-rating {
-
   .star {
     font-size: 20px;
     color: $empty-star-gray;
@@ -98,6 +107,81 @@
 
     &:hover:not(.active) {
       color: lighten($brand-blue, 5%);
+    }
+  }
+}
+
+
+// Books show
+.review-container {
+  padding: 50px 0 80px 0;
+  border-top: 2px solid lighten($blueish-gray, 20%);
+
+  .review-column {
+    @include make-lg-column-offset(4);
+    @include make-lg-column(16);
+    color: $brand-grey;
+
+    .book-meta {
+      @media (max-width: 550px) {
+        text-align: center;
+
+        img {
+          float: none;
+        }
+      }
+    }
+
+    img {
+      max-height: 250px;
+      width: auto;
+      border-radius: 4px;
+      margin: 0 30px 20px 0;
+      border: 12px solid $brand-grey;
+
+      @media (min-width: $screen-xs-min) {
+        float: left;
+        max-height: 350px;
+      }
+    }
+
+    .book-title {
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .book-author {
+      font-size: 17px;
+    }
+
+    .publisher {
+      font-size: 16px;
+
+      .shop-link {
+        display: block;
+        color: $brand-blue;
+        margin-left: 4px;
+
+        &:hover {
+          color: lighten($brand-blue, 15%);
+        }
+      }
+    }
+
+    .quote {
+      font-family: $serif-font;
+      margin: 15px 0;
+      font-size: 19px;
+      font-style: italic;
+      color: $brand-grey-light;
+      position: relative;
+    }
+
+    .review {
+      font-family: $serif-font;
+      color: $brand-grey;
+      font-size: 17px;
+      line-height: 26px;
     }
   }
 }

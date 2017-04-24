@@ -21,13 +21,16 @@ class BooksController < ApplicationController
     @books.sort_by! { |book| Date.parse(book['date']) }.reverse!
   end
 
-  # def show
-  #   title = ActionController::Base.helpers.sanitize(params[:id])
-  #   file_path = Rails.root.join('app', 'books', "#{title}.yml")
-  #   if File.exists?(file_path)
-  #     @book = YAML.load_file(file_path)
-  #   else
-  #     raise ActionController::RoutingError, 'Not Found'
-  #   end
-  # end
+  def show
+    title = ActionController::Base.helpers.sanitize(params[:id])
+    file_path = Dir.glob(Rails.root.join('app', 'books', "**/*"))
+                   .select { |path| path.split('/').last == "#{title}.yml" }
+                   .first
+
+    if file_path && File.file?(file_path)
+      @book = YAML.load_file(file_path)
+    else
+      raise ActionController::RoutingError, 'Not Found'
+    end
+  end
 end
