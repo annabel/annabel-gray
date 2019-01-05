@@ -11,7 +11,7 @@ class BooksController < ApplicationController
       if @available_years.include?(year_param)
         year_param
       else
-        Time.zone.now.year.to_s
+        @available_years.first
       end
 
     @books = []
