@@ -10,7 +10,7 @@ gem 'jquery-rails'
 gem 'pg'
 gem 'pry'
 gem 'puma'
-gem 'rails', '4.2.8'
+gem 'rails', '4.2.11.1'
 gem 'rails_12factor', group: :production
 gem 'respond-rails', '~> 1.0'
 gem 'sass-rails', '~> 5.0'
