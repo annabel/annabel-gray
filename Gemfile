@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 ruby '2.5.3'
 
 gem 'bootstrap-sass'
-gem 'coffee-rails', '~> 4.1.0'
+gem 'coffee-rails', '~> 4.2.2'
 gem 'figaro'
 gem 'haml'
 gem 'jquery-rails'
