@@ -80,7 +80,7 @@ GEM
       thor (~> 0.14)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
-    haml (5.0.0)
+    haml (5.1.2)
       temple (>= 0.8.0)
       tilt
     i18n (1.8.5)
