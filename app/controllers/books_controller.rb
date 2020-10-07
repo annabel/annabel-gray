@@ -1,10 +1,11 @@
 class BooksController < ApplicationController
   def index
-    @available_years = Dir.glob(Rails.root.join('app', 'books', '*'))
-                         .select { |path| File.directory?(path) }
-                         .map { |path| path.split('/').last }
-                         .sort
-                         .reverse
+    @available_years = Dir
+      .glob(Rails.root.join('books', '*'))
+      .select { |path| File.directory?(path) }
+      .map { |path| path.split('/').last }
+      .sort
+      .reverse
 
     year_param = ActionController::Base.helpers.sanitize(params[:year])
     @current_year =
@@ -15,7 +16,7 @@ class BooksController < ApplicationController
       end
 
     @books = []
-    Dir.glob(Rails.root.join('app', 'books', @current_year, '*.yml')) do |book_file|
+    Dir.glob(Rails.root.join('books', @current_year, '*.yml')) do |book_file|
       @books << YAML.load_file(book_file)
     end
     @books.sort_by! { |book| Date.parse(book['date']) }.reverse!
@@ -23,7 +24,7 @@ class BooksController < ApplicationController
 
   def show
     title = ActionController::Base.helpers.sanitize(params[:id])
-    file_path = Dir.glob(Rails.root.join('app', 'books', "**/*"))
+    file_path = Dir.glob(Rails.root.join('books', "**/*"))
                    .select { |path| path.split('/').last == "#{title}.yml" }
                    .first
 
