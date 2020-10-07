@@ -29,18 +29,18 @@ Rails.application.configure do
   end
 
   # Don't care if the mailer can't send.
-  config.action_mailer.raise_delivery_errors = false
-
-  config.action_mailer.perform_caching = false
+  # config.action_mailer.raise_delivery_errors = false
+  #
+  # config.action_mailer.perform_caching = false
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
 
   # Raise an error on page load if there are pending migrations.
-  config.active_record.migration_error = :page_load
+  # config.active_record.migration_error = :page_load
 
   # Highlight code that triggered database queries in logs.
-  config.active_record.verbose_query_logs = true
+  # config.active_record.verbose_query_logs = true
 
   # Debug mode disables concatenation and preprocessing of assets.
   # This option may cause significant delays in view rendering with a large
@@ -55,7 +55,7 @@ Rails.application.configure do
 
   # Use an evented file watcher to asynchronously detect changes in source code,
   # routes, locales, etc. This feature depends on the listen gem.
-  config.file_watcher = ActiveSupport::EventedFileUpdateChecker
+  # config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
   logger = ActiveSupport::Logger.new(STDOUT)
   logger.formatter = config.log_formatter
