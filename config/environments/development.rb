@@ -38,5 +38,7 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
-  config.logger = ::ActiveSupport::Logger.new(STDOUT)
+  logger = ActiveSupport::Logger.new($stdout)
+  logger.formatter = config.log_formatter
+  config.logger = ActiveSupport::TaggedLogging.new(logger)
 end
