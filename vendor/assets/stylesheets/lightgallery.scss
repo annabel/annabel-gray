@@ -604,7 +604,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .group {
-  *zoom: 1;
+  transform:scale(1);
+  transform-origin: 0 0;
 }
 
 .group:before, .group:after {

@@ -7,20 +7,6 @@
   clear: both;
   overflow: hidden;
 
-  .text-fill {
-    height: 174px;
-    position: absolute;
-    left: 0;
-    right: 0;
-  }
-
-  .text-background {
-    color: $brand-grey-light;
-    position: absolute;
-    text-align: justify;
-    text-transform: uppercase;
-  }
-
   .contact-content {
     @media (min-width: $screen-sm-min) {
       @include vertically-align();
@@ -65,8 +51,9 @@
 
           &:hover,
           &:active {
+            text-decoration: none;
             &:after {
-              width: 226px;
+              width: 133px;
             }
           }
 

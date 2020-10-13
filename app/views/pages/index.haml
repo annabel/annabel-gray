@@ -1,15 +1,20 @@
-#index
-  .index-row
-    .computer
-      = image_tag "me.png"
-    .text
-      .name Annabel Dunstone Gray
-      .title.developer
-        = link_to "Frontend Engineer", work_path
-      .title.designer
-        = link_to "Occasional Designer", work_path
-      .title.photographer
-        = link_to "Amateur Photographer", photography_path
-      .title.baker Experimental Baker
-      .title.reader
-        = link_to "Avid Reader", books_path
+.rectangle
+
+  .block.flex-direction-initial
+    .flex-1.hide-small
+    .name-block.flex-1
+      .name.name-1 annabel
+      .name.name-2 dunstone
+      .name.name-3 gray
+
+  .block.shape-block
+    = image_tag "shape.svg"
+
+  .block
+    .skills-block.flex-1.align-self-end
+      .skill product designer
+      .skill frontend engineer
+      .skill amateur photographer
+      .skill experimental baker
+      .skill avid reader
+    .flex-1.hide-small

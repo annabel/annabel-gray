@@ -42,20 +42,21 @@
         padding: 29px 20px;
 
         a {
-          padding-bottom: 5px;
           font-weight: 500;
-          color: darken($blueish-gray, 12%);
+          color: $black;
         }
 
         &.active {
           a {
-            border-bottom: 2px solid;
+            border-bottom: 3px solid;
+            text-decoration: none;
           }
         }
 
         &:hover:not(.active) {
           a {
-            color: $brand-blue;
+            border-bottom: 3px solid $black;
+            text-decoration: none;
           }
         }
 
@@ -82,25 +83,16 @@
       }
 
       &.home {
-        color: darken($blueish-gray, 12%);
+        color: $black;
 
         &:hover {
-          color: $brand-teal;
-
-          img {
-            filter: none;
-          }
+          text-decoration: none;
         }
 
         .home-text {
           @media (max-width: $screen-sm-max) {
             display: none;
           }
-        }
-
-        img {
-          -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
         }
       }
 
