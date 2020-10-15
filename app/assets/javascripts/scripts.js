@@ -10,3 +10,7 @@ function displayWorkInfo() {
     $(this).parent().parent().toggleClass('active-button');
   });
 };
+
+$(document).ready(function () {
+  displayWorkInfo();
+});
