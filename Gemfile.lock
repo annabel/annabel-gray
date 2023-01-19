@@ -78,7 +78,7 @@ GEM
     erubi (1.11.0)
     execjs (2.7.0)
     ffi (1.13.1)
-    globalid (1.0.0)
+    globalid (1.0.1)
       activesupport (>= 5.0)
     haml (6.1.1)
       temple (>= 0.8.2)
@@ -99,7 +99,7 @@ GEM
     method_source (1.0.0)
     mini_mime (1.1.2)
     mini_portile2 (2.8.0)
-    minitest (5.16.3)
+    minitest (5.17.0)
     net-imap (0.2.3)
       digest
       net-protocol
