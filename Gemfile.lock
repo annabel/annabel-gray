@@ -80,7 +80,7 @@ GEM
     ffi (1.13.1)
     globalid (1.2.1)
       activesupport (>= 6.1)
-    haml (6.1.2)
+    haml (6.2.0)
       temple (>= 0.8.2)
       thor
       tilt
@@ -170,7 +170,7 @@ GEM
       sprockets (>= 3.0.0)
     temple (0.10.2)
     thor (1.2.2)
-    tilt (2.2.0)
+    tilt (2.3.0)
     timeout (0.4.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
