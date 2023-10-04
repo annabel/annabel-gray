@@ -80,7 +80,7 @@ GEM
     ffi (1.13.1)
     globalid (1.2.1)
       activesupport (>= 6.1)
-    haml (6.2.0)
+    haml (6.2.3)
       temple (>= 0.8.2)
       thor
       tilt
@@ -168,7 +168,7 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
-    temple (0.10.2)
+    temple (0.10.3)
     thor (1.2.2)
     tilt (2.3.0)
     timeout (0.4.0)
